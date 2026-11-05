@@ -235,10 +235,11 @@ window.CMC_DATA = {
           "id": "event-reel",
           "title": "CardioRenal event reel",
           "detail": "1:04 · Existing event reference",
-          "group": "Reference videos",
+          "group": "Extras · Reference cuts",
           "kind": "video",
           "driveId": "1VOKQ6a_SegqBhe87YvJVK4uHMDVFJJxN",
-          "url": "https://drive.google.com/file/d/1VOKQ6a_SegqBhe87YvJVK4uHMDVFJJxN/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1VOKQ6a_SegqBhe87YvJVK4uHMDVFJJxN/view?usp=drivesdk",
+          "supplementary": true
         },
         {
           "id": "frame-7",
@@ -450,7 +451,41 @@ window.CMC_DATA = {
           "url": "https://drive.google.com/file/d/1Bwjs1UxkD6HGcCJN5JyeNLADkrB3PuiT/view?usp=drivesdk",
           "shortlisted": false
         }
-      ]
+      ],
+      "scope": {
+        "requested": "November 1, 2026",
+        "due": "November 6, 2026",
+        "items": [
+          {
+            "title": "5–7 photos pulled from video",
+            "criteria": "Select and deliver 5–7 final stills from the video content.",
+            "status": "Selection needed",
+            "detail": "21 candidates available; 12 editorial shortlist choices are marked.",
+            "asset": "frame-26",
+            "action": "Review photo candidates"
+          },
+          {
+            "title": "Conference B-roll video",
+            "criteria": "Create an edited B-roll highlight video.",
+            "status": "Drafts for review",
+            "detail": "Landscape and vertical drafts are available, each 0:59. Final approval is pending.",
+            "asset": "cardio-landscape",
+            "action": "Review B-roll"
+          },
+          {
+            "title": "Edited attendee interview compilation",
+            "criteria": "At least 10 minutes of edited short attendee interviews.",
+            "status": "In production",
+            "detail": "The requested full compilation is not yet ready for review."
+          },
+          {
+            "title": "Upload the interview compilation to YouTube",
+            "criteria": "Publish the completed, approved attendee interview video to YouTube.",
+            "status": "Pending approved edit",
+            "detail": "No YouTube upload has been made for this deliverable."
+          }
+        ]
+      }
     },
     {
       "id": "bcp",
@@ -484,30 +519,69 @@ window.CMC_DATA = {
           "id": "interview-vlog",
           "title": "Norman’s interview vlog",
           "detail": "8:16 · Existing reference cut",
-          "group": "Reference videos",
+          "group": "Extras · Reference cuts",
           "kind": "video",
           "driveId": "1QRbGlNV7U-h3foLH5Mrj0Aq3nN2ktNor",
-          "url": "https://drive.google.com/file/d/1QRbGlNV7U-h3foLH5Mrj0Aq3nN2ktNor/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1QRbGlNV7U-h3foLH5Mrj0Aq3nN2ktNor/view?usp=drivesdk",
+          "supplementary": true
         },
         {
           "id": "orlando-reel-2",
           "title": "Orlando BCP reel 2",
           "detail": "Existing event reel · Reference cut",
-          "group": "Reference videos",
+          "group": "Extras · Reference cuts",
           "kind": "video",
           "driveId": "1JVmprl7gXnNyuNxZ3lexuAvBydBsGLjn",
-          "url": "https://drive.google.com/file/d/1JVmprl7gXnNyuNxZ3lexuAvBydBsGLjn/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1JVmprl7gXnNyuNxZ3lexuAvBydBsGLjn/view?usp=drivesdk",
+          "supplementary": true
         },
         {
           "id": "photo-reel",
           "title": "Conference photo reel",
           "detail": "Existing photo reel · Reference cut",
-          "group": "Reference videos",
+          "group": "Extras · Reference cuts",
           "kind": "video",
           "driveId": "1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6",
-          "url": "https://drive.google.com/file/d/1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6/view?usp=drivesdk",
+          "supplementary": true
         }
-      ]
+      ],
+      "scope": {
+        "requested": "November 1, 2026",
+        "due": "November 7, 2026",
+        "items": [
+          {
+            "title": "Full panel session edit",
+            "criteria": "Edit the panel session for inclusion in the final combined film.",
+            "status": "In production",
+            "detail": "The completed panel edit is not yet ready for review."
+          },
+          {
+            "title": "Attendee interview compilation",
+            "criteria": "Include at least 10 minutes of edited attendee interviews in the final film.",
+            "status": "In production",
+            "detail": "Reference cuts below are not the requested final compilation."
+          },
+          {
+            "title": "One combined conference film",
+            "criteria": "Combine the panel and attendee interviews into one film, 35–45 minutes total.",
+            "status": "In production",
+            "detail": "The final combined film is not yet ready for review."
+          },
+          {
+            "title": "Social shorts from the film",
+            "criteria": "Run the edited film through the shorts workflow to create social content.",
+            "status": "Pending completed film",
+            "detail": "The request did not specify a clip count."
+          },
+          {
+            "title": "Upload the combined film to YouTube",
+            "criteria": "Publish the completed, approved 35–45-minute film to YouTube.",
+            "status": "Pending approved edit",
+            "detail": "No YouTube upload has been made for this deliverable."
+          }
+        ]
+      }
     }
   ]
 };

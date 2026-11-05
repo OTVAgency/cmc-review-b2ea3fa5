@@ -7,6 +7,7 @@ const $ = (id) => document.getElementById(id);
 let project;
 let selected;
 let feedbackOpener;
+let previewTimer;
 
 function element(tag, text, className) {
   const item = document.createElement(tag);
@@ -24,22 +25,34 @@ function chooseAsset(id, focus = false) {
   selected = project.assets.find((asset) => asset.id === id) || project.assets[0];
   $("asset-title").textContent = selected.title;
   $("asset-detail").textContent = selected.detail;
-  $("asset-kind").textContent = selected.kind === "photo" ? "Photo candidate" : "Video review";
-  // Open Drive's own viewer so account permissions, downloads and playback
-  // remain reliable when a browser restricts third-party embedded content.
-  $("launch-title").textContent = selected.title;
-  $("launch-help").textContent = selected.kind === "photo"
-    ? "Open the full-size photo in Drive. Include its frame number in your feedback."
-    : "Open the video in Drive and keep this review page open for your notes.";
-  $("media-symbol").textContent = selected.kind === "photo" ? "▧" : "▶";
-  $("watch-media").textContent = selected.kind === "photo" ? "View photo in Drive ↗" : "Watch video in Drive ↗";
-  $("watch-media").href = selected.url;
+  $("asset-kind").textContent = selected.supplementary ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
+  // Use Drive's embedded viewer, retaining the file's existing account access.
+  // Replacing the frame stops the previous video when the selection changes.
+  clearTimeout(previewTimer);
+  const frame = element("iframe");
+  frame.id = "media-preview";
+  frame.title = selected.title + " · Google Drive preview";
+  frame.allow = "autoplay; fullscreen";
+  frame.allowFullscreen = true;
+  frame.src = "https://drive.google.com/file/d/" + encodeURIComponent(selected.driveId) + "/preview";
+  $("preview-status").textContent = "Loading the selected preview…";
+  frame.addEventListener("load", () => {
+    clearTimeout(previewTimer);
+    // Cross-origin load does not prove successful playback or account access.
+    $("preview-status").textContent = selected.kind === "photo"
+      ? "Review the photo above. Include its frame number in your feedback."
+      : "Press Play above to review. Add the timestamp when leaving feedback.";
+  });
+  $("player").replaceChildren(frame);
+  previewTimer = setTimeout(() => {
+    $("preview-status").textContent = "Preview taking a while? Open in Drive below to sign in or check video processing.";
+  }, 15000);
   $("open-media").href = selected.url;
   $("open-media").setAttribute("aria-label", "Open " + selected.title + " in Google Drive");
   document.querySelectorAll(".media-choice").forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.asset === selected.id));
   });
-  if (selected.supplementary) document.querySelector(".extra-media").open = true;
+  if (selected.supplementary && !project.scope) document.querySelector(".extra-media").open = true;
   const url = new URL(location.href);
   url.hash = project.id;
   url.searchParams.set("item", selected.id);
@@ -49,11 +62,13 @@ function chooseAsset(id, focus = false) {
 
 function renderLibrary() {
   $("media-list").replaceChildren();
+  $("extras-list").replaceChildren();
+  $("extras-section").hidden = !project.scope;
   const mainCount = project.assets.filter((asset) => !asset.supplementary).length;
   $("asset-count").textContent = "(" + mainCount + ")";
   const mainGroups = [...new Set(project.assets.filter((asset) => !asset.supplementary).map((asset) => asset.group))];
   const extraGroups = [...new Set(project.assets.filter((asset) => asset.supplementary).map((asset) => asset.group))];
-  const groups = [...mainGroups, ...extraGroups];
+  const groups = project.scope ? mainGroups : [...mainGroups, ...extraGroups];
   for (const name of groups) {
     const supplementary = project.assets.filter((item) => item.group === name).every((item) => item.supplementary);
     const group = element(supplementary ? "details" : "section", undefined, supplementary ? "media-group extra-media" : "media-group");
@@ -70,6 +85,17 @@ function renderLibrary() {
     }
     $("media-list").append(group);
   }
+  if (project.scope) {
+    for (const asset of project.assets.filter((item) => item.supplementary)) {
+      const button = element("button", undefined, "media-choice");
+      button.type = "button";
+      button.dataset.asset = asset.id;
+      button.append(element("strong", asset.title), element("small", asset.detail));
+      button.addEventListener("click", () => chooseAsset(asset.id, true));
+      $("extras-list").append(button);
+    }
+    if (!mainCount) $("media-list").append(element("p", "The requested edits will appear here when ready. Existing reference cuts are in Extras below.", "library-empty"));
+  }
 }
 
 function renderProject() {
@@ -81,6 +107,7 @@ function renderProject() {
   $("event-description").textContent = project.description;
   $("event-status").textContent = project.status;
   $("review-hint").textContent = project.reviewHint;
+  renderScope();
   document.querySelectorAll(".nav-item").forEach((link) => {
     if (link.hash === "#" + project.id) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
@@ -113,6 +140,37 @@ function renderProject() {
   renderLibrary();
   const wanted = new URL(location.href).searchParams.get("item");
   chooseAsset(project.assets.some((asset) => asset.id === wanted) ? wanted : project.defaultAsset);
+}
+
+function renderScope() {
+  $("scope-section").hidden = !project.scope;
+  $("deliverables-section").hidden = Boolean(project.scope);
+  $("scope-list").replaceChildren();
+  if (!project.scope) return;
+  $("scope-source").textContent = "Requested " + project.scope.requested + " · Due " + project.scope.due;
+  const complete = project.scope.items.filter((item) => item.complete).length;
+  $("scope-progress").textContent = complete + " of " + project.scope.items.length + " complete";
+  for (const item of project.scope.items) {
+    const row = element("li", undefined, "scope-item");
+    const mark = element("span", item.complete ? "✓" : "○", "scope-mark");
+    mark.setAttribute("aria-label", item.complete ? "Complete" : "Not yet complete");
+    const copy = element("div", undefined, "scope-copy");
+    copy.append(element("h3", item.title), element("p", item.criteria), element("small", item.detail));
+    const actions = element("div", undefined, "scope-actions");
+    actions.append(element("span", item.status, "status"));
+    if (item.asset) {
+      const review = element("button", item.action, "text-button");
+      review.type = "button";
+      review.addEventListener("click", () => chooseAsset(item.asset, true));
+      actions.append(review);
+    }
+    const note = element("button", "Leave feedback →", "text-button");
+    note.type = "button";
+    note.addEventListener("click", (event) => feedback({title: item.title, detail: item.criteria, kind: "scope"}, event.currentTarget));
+    actions.append(note);
+    row.append(mark, copy, actions);
+    $("scope-list").append(row);
+  }
 }
 
 function feedback(item, opener) {
