@@ -14,9 +14,9 @@ window.CMC_DATA = {
       "reviewHint": "Check the recap and Opus shorts, then review the YouTube thumbnail, title and description below.",
       "deliverables": [
         {
-          "title": "Event recap",
+          "title": "Comfy Connection",
           "status": "Review copy",
-          "detail": "7:58 · V8 with PAM intro and seven speaker credits"
+          "detail": "7:58 · Comfy Connection intro theme · Seven speaker credits"
         },
         {
           "title": "Opus shorts",
@@ -32,8 +32,8 @@ window.CMC_DATA = {
       "assets": [
         {
           "id": "pam-recap",
-          "title": "Event recap",
-          "detail": "7:58 · V8 · Fletcher-beat intro · Review copy",
+          "title": "Comfy Connection",
+          "detail": "7:58 · Review copy",
           "group": "Event recap",
           "kind": "video",
           "driveId": "1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm",
