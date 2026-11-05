@@ -25,9 +25,15 @@ function chooseAsset(id, focus = false) {
   $("asset-title").textContent = selected.title;
   $("asset-detail").textContent = selected.detail;
   $("asset-kind").textContent = selected.kind === "photo" ? "Photo candidate" : "Video review";
-  $("media-frame").title = selected.title + " · " + project.title;
-  // A Drive preview preserves the file's existing account permissions.
-  $("media-frame").src = "https://drive.google.com/file/d/" + encodeURIComponent(selected.driveId) + "/preview";
+  // Open Drive's own viewer so account permissions, downloads and playback
+  // remain reliable when a browser restricts third-party embedded content.
+  $("launch-title").textContent = selected.title;
+  $("launch-help").textContent = selected.kind === "photo"
+    ? "Open the full-size photo in Drive. Include its frame number in your feedback."
+    : "Open the video in Drive and keep this review page open for your notes.";
+  $("media-symbol").textContent = selected.kind === "photo" ? "▧" : "▶";
+  $("watch-media").textContent = selected.kind === "photo" ? "View photo in Drive ↗" : "Watch video in Drive ↗";
+  $("watch-media").href = selected.url;
   $("open-media").href = selected.url;
   $("open-media").setAttribute("aria-label", "Open " + selected.title + " in Google Drive");
   document.querySelectorAll(".media-choice").forEach((button) => {
