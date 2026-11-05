@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="CMC event media review for Norman Harris Jr. Watch review cuts and send timestamped revision feedback to OTV Agency.">
+  <title>CMC · Event media review</title>
+  <link rel="icon" href="cmc-logo.png">
+  <link rel="stylesheet" href="review.css">
+  <script src="data.js" defer></script>
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <a href="#project" class="skip">Skip to event review</a>
+  <aside class="sidebar">
+    <a class="brand" href="#comfy"><img src="cmc-logo.png" alt="Comfort Measures Consulting"><span>EVENT MEDIA<br><small>REVIEW ROOM</small></span></a>
+    <div class="nav-label">YOUR EVENTS</div>
+    <nav id="project-nav" aria-label="Choose an event"></nav>
+    <div class="sidebar-footer"><span class="dot"></span> Norman Harris Jr.<br><small>Prepared by OTV Agency</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>CMC <span aria-hidden="true">/</span> Client review</span><span id="updated"></span></header>
+    <main id="project" tabindex="-1">
+      <section class="hero">
+        <div><p class="eyebrow">GOOD CONNECTIONS. CLEAR FEEDBACK.</p><h1 id="event-title">Event media review</h1><p class="subtitle" id="event-subtitle"></p><p class="description" id="event-description"></p></div>
+        <div class="hero-status"><span class="status" id="event-status"></span><p>Review copies · Subject to approval</p></div>
+      </section>
+      <section class="review-instructions" aria-label="How to review"><span class="instruction-number">1</span><span>Choose a video or photo.</span><span class="instruction-number">2</span><span>Note the timestamp or frame number.</span><span class="instruction-number">3</span><span>Select <strong>Leave feedback</strong> and send your note.</span></section>
+      <section class="review-layout" aria-label="Media review">
+        <div class="review-card">
+          <div class="preview-head"><div><p class="eyebrow">NOW REVIEWING</p><h2 id="asset-title"></h2><p id="asset-detail"></p></div><span id="asset-kind" class="tag"></span></div>
+          <div class="player" id="player"><iframe id="media-frame" title="Selected review media" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <div class="player-actions"><a id="open-media" class="text-link" target="_blank" rel="noopener noreferrer">Open in Drive ↗</a><button id="feedback-current" class="button">Leave feedback for this item →</button></div>
+          <p class="access-note">If Drive asks you to sign in, use the Google account that has access to your CMC files. If a new upload is still processing, use Open in Drive to download it.</p>
+        </div>
+        <aside class="media-library"><div class="library-heading"><p class="eyebrow">CHOOSE YOUR NEXT ITEM</p><h2>Review library <span id="asset-count"></span></h2></div><div id="media-list"></div></aside>
+      </section>
+      <section class="feedback-strip"><div><p class="eyebrow">YOUR REVISION NOTES</p><h2>Tell us what to adjust.</h2><p id="review-hint"></p></div><button class="button secondary" id="feedback-general">Send event feedback →</button></section>
+      <section class="deliverables"><div class="section-heading"><p class="eyebrow">WHERE THE WORK STANDS</p><h2>Project deliverables</h2></div><div id="deliverable-list" class="deliverable-grid"></div></section>
+      <section id="credits-section" class="credits" hidden><div class="section-heading"><p class="eyebrow">IN THE EVENT RECAP</p><h2>Speaker credits</h2><p>Times refer to the V8 recap. Use them to find each name card in the player.</p></div><div id="credits-list"></div></section>
+      <footer>Comfort Measures Consulting <span aria-hidden="true">×</span> OTV Agency<br><small>Feedback is saved securely through Jotform. Review status is updated by the production team.</small></footer>
+    </main>
+  </div>
+  <dialog id="feedback-dialog" aria-labelledby="feedback-title">
+    <div class="dialog-header"><div><p class="eyebrow">SEND A NOTE TO OTV AGENCY</p><h2 id="feedback-title">Revision feedback</h2><p id="feedback-context"></p></div><button id="close-feedback" class="close" aria-label="Close feedback form">×</button></div>
+    <p class="form-help">The event and item are filled in for you. Add the timestamp and requested change, then press <strong>Send feedback</strong>. A receipt opens in a new tab; wait for confirmation that your note was saved.</p>
+    <form id="revision-form" class="revision-form" action="https://submit.jotform.com/submit/263085670628060" method="post" target="_blank" rel="noopener">
+      <input type="hidden" name="formID" value="263085670628060">
+      <input type="hidden" id="feedback-event" name="q2_q2_dropdown0">
+      <label>Video or photo title <span aria-hidden="true">*</span><input id="feedback-item" name="q3_q3_textbox1" required maxlength="300"></label>
+      <div class="form-row"><label>Timestamp or photo number<input id="feedback-time" name="q5_q5_textbox3" placeholder="e.g. 02:15 or Frame 026" maxlength="100"></label><label>Feedback type<select id="feedback-type" name="q7_q7_dropdown5"><option>Revision request</option><option>Approval</option><option>Question</option></select></label></div>
+      <label>Requested change or feedback <span aria-hidden="true">*</span><textarea id="feedback-note" name="q4_q4_textarea2" required rows="5" maxlength="6000" placeholder="Tell us what to change, keep or clarify."></textarea></label>
+      <div class="form-row"><label>Your first name <span class="optional">(optional)</span><input name="q6_q6_fullname4[first]" autocomplete="given-name" maxlength="100"></label><label>Your last name <span class="optional">(optional)</span><input name="q6_q6_fullname4[last]" autocomplete="family-name" maxlength="100"></label></div>
+      <button class="button" type="submit">Send feedback &amp; open receipt ↗</button>
+      <p class="submission-help" id="submission-help" aria-live="polite">One note per requested change. Your review page stays open.</p>
+    </form>
+    <div class="dialog-footer"><a id="feedback-external" target="_blank" rel="noopener noreferrer">Use the full feedback form ↗</a><span>Check the receipt before closing this note.</span></div>
+  </dialog>
+  <noscript><p class="noscript">Please enable JavaScript to view this review library. You can also <a href="https://form.jotform.com/263085670628060">send event feedback here</a>.</p></noscript>
+</body>
+</html>
