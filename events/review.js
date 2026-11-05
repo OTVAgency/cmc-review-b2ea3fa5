@@ -39,6 +39,7 @@ function chooseAsset(id, focus = false) {
   document.querySelectorAll(".media-choice").forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.asset === selected.id));
   });
+  if (selected.supplementary) document.querySelector(".extra-media").open = true;
   const url = new URL(location.href);
   url.hash = project.id;
   url.searchParams.set("item", selected.id);
@@ -48,11 +49,15 @@ function chooseAsset(id, focus = false) {
 
 function renderLibrary() {
   $("media-list").replaceChildren();
-  $("asset-count").textContent = "(" + project.assets.length + ")";
-  const groups = [...new Set(project.assets.map((asset) => asset.group))];
+  const mainCount = project.assets.filter((asset) => !asset.supplementary).length;
+  $("asset-count").textContent = "(" + mainCount + ")";
+  const mainGroups = [...new Set(project.assets.filter((asset) => !asset.supplementary).map((asset) => asset.group))];
+  const extraGroups = [...new Set(project.assets.filter((asset) => asset.supplementary).map((asset) => asset.group))];
+  const groups = [...mainGroups, ...extraGroups];
   for (const name of groups) {
-    const group = element("section", undefined, "media-group");
-    group.append(element("h3", name));
+    const supplementary = project.assets.filter((item) => item.group === name).every((item) => item.supplementary);
+    const group = element(supplementary ? "details" : "section", undefined, supplementary ? "media-group extra-media" : "media-group");
+    group.append(element(supplementary ? "summary" : "h3", supplementary ? name + " (" + project.assets.filter((item) => item.group === name).length + ")" : name));
     for (const asset of project.assets.filter((item) => item.group === name)) {
       const button = element("button", undefined, "media-choice");
       button.type = "button";
@@ -87,6 +92,18 @@ function renderProject() {
     $("deliverable-list").append(card);
   }
   $("credits-section").hidden = !project.credits;
+  $("youtube-package").hidden = !project.youtube;
+  if (project.youtube) {
+    const yt = project.youtube;
+    $("youtube-thumbnail").src = yt.thumbnail;
+    $("youtube-thumbnail").alt = yt.thumbnailAlt;
+    $("thumbnail-open").href = yt.thumbnail;
+    $("thumbnail-download").href = yt.thumbnail;
+    $("youtube-title").value = yt.title;
+    $("youtube-description").value = yt.description;
+    $("description-download").href = yt.descriptionFile;
+    $("copy-status").textContent = "";
+  }
   $("credits-list").replaceChildren();
   for (const item of project.credits || []) {
     const card = element("div", undefined, "credit");
@@ -115,6 +132,33 @@ function feedback(item, opener) {
   feedbackOpener = opener;
   $("feedback-dialog").showModal();
 }
+
+async function copyYouTube(field) {
+  const input = $("youtube-" + field);
+  try {
+    await navigator.clipboard.writeText(input.value);
+    $("copy-status").textContent = field === "title" ? "Title copied." : "Description copied.";
+  } catch {
+    // Keep the text selectable when a browser blocks clipboard access.
+    input.focus();
+    input.select();
+    $("copy-status").textContent = "Text selected. Use your device’s Copy command.";
+  }
+}
+
+for (const field of ["title", "description"]) {
+  $("copy-" + field).addEventListener("click", () => copyYouTube(field));
+  $(field + "-feedback").addEventListener("click", (event) => feedback({
+    title: "YouTube " + field,
+    detail: "Comfy Connections recap · Draft v" + project.youtube.version,
+    kind: "copy"
+  }, event.currentTarget));
+}
+$("thumbnail-feedback").addEventListener("click", (event) => feedback({
+  title: "YouTube thumbnail",
+  detail: "Comfy Connections recap · Draft v" + project.youtube.version,
+  kind: "graphic"
+}, event.currentTarget));
 
 for (const item of data.projects) {
   const link = element("a", undefined, "nav-item");

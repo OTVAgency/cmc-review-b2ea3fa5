@@ -8,14 +8,14 @@
   <meta name="description" content="CMC event media review for Norman Harris Jr. Watch review cuts and send timestamped revision feedback to OTV Agency.">
   <title>CMC · Event media review</title>
   <link rel="icon" href="cmc-logo.png">
-  <link rel="stylesheet" href="review.css?v=20261105-3">
-  <script src="data.js?v=20261105-3" defer></script>
-  <script src="review.js?v=20261105-3" defer></script>
+  <link rel="stylesheet" href="review.css?v=20261105-4">
+  <script src="data.js?v=20261105-4" defer></script>
+  <script src="review.js?v=20261105-4" defer></script>
 </head>
 <body>
   <a href="#project" class="skip">Skip to event review</a>
   <aside class="sidebar">
-    <a class="brand" href="#comfy"><img src="cmc-logo.png" alt="Comfort Measures Consulting"><span>EVENT MEDIA<br><small>REVIEW ROOM</small></span></a>
+    <a class="brand" href="#comfy"><img src="cmc-logo.png" alt="Comfort Measures Media"><span>EVENT MEDIA<br><small>REVIEW ROOM</small></span></a>
     <div class="nav-label">YOUR EVENTS</div>
     <nav id="project-nav" aria-label="Choose an event"></nav>
     <div class="sidebar-footer"><span class="dot"></span> Norman Harris Jr.<br><small>Prepared by OTV Agency</small></div>
@@ -24,7 +24,7 @@
     <header class="topbar"><span>CMC <span aria-hidden="true">/</span> Client review</span><span id="updated"></span></header>
     <main id="project" tabindex="-1">
       <section class="hero">
-        <div><p class="eyebrow">GOOD CONNECTIONS. CLEAR FEEDBACK.</p><h1 id="event-title">Event media review</h1><p class="subtitle" id="event-subtitle"></p><p class="description" id="event-description"></p></div>
+        <div><p class="eyebrow">EVENT MEDIA REVIEW</p><h1 id="event-title">Event media review</h1><p class="subtitle" id="event-subtitle"></p><p class="description" id="event-description"></p></div>
         <div class="hero-status"><span class="status" id="event-status"></span><p>Review copies · Subject to approval</p></div>
       </section>
       <section class="review-instructions" aria-label="How to review"><span class="instruction-number">1</span><span>Choose a video or photo.</span><span class="instruction-number">2</span><span>Note the timestamp or frame number.</span><span class="instruction-number">3</span><span>Select <strong>Leave feedback</strong> and send your note.</span></section>
@@ -38,9 +38,16 @@
         <aside class="media-library"><div class="library-heading"><p class="eyebrow">CHOOSE YOUR NEXT ITEM</p><h2>Review library <span id="asset-count"></span></h2></div><div id="media-list"></div></aside>
       </section>
       <section class="feedback-strip"><div><p class="eyebrow">YOUR REVISION NOTES</p><h2>Tell us what to adjust.</h2><p id="review-hint"></p></div><button class="button secondary" id="feedback-general">Send event feedback →</button></section>
+      <section class="youtube-package" id="youtube-package" hidden aria-labelledby="youtube-heading">
+        <div class="youtube-heading"><div><p class="eyebrow">FOR THE EVENT RECAP</p><h2 id="youtube-heading">YouTube publishing package</h2><p>Review these drafts before the recap goes on YouTube.</p></div><span class="status">Draft for review</span></div>
+        <div class="youtube-grid">
+          <article class="youtube-thumbnail"><h3>Thumbnail</h3><a id="thumbnail-open" target="_blank" rel="noopener"><img id="youtube-thumbnail" alt=""></a><div class="youtube-actions"><a id="thumbnail-download" class="button" download>Download thumbnail ↓</a><button id="thumbnail-feedback" class="button secondary" type="button">Leave feedback</button></div><p class="asset-note">AI-assisted layout using the event group photo and CMC Media branding.</p></article>
+          <div class="youtube-copy"><article><div class="copy-heading"><h3>Title</h3><button id="copy-title" type="button" class="copy-button">Copy title</button></div><label class="sr-only" for="youtube-title">YouTube title draft</label><textarea id="youtube-title" readonly rows="2"></textarea><button id="title-feedback" class="text-button" type="button">Leave title feedback →</button></article><article><div class="copy-heading"><h3>Description</h3><button id="copy-description" type="button" class="copy-button">Copy description</button></div><label class="sr-only" for="youtube-description">YouTube description draft</label><textarea id="youtube-description" readonly rows="13"></textarea><div class="description-actions"><button id="description-feedback" class="text-button" type="button">Leave description feedback →</button><a id="description-download" download>Download text ↓</a></div></article></div>
+        </div><p id="copy-status" class="copy-status" aria-live="polite"></p>
+      </section>
       <section class="deliverables"><div class="section-heading"><p class="eyebrow">WHERE THE WORK STANDS</p><h2>Project deliverables</h2></div><div id="deliverable-list" class="deliverable-grid"></div></section>
       <section id="credits-section" class="credits" hidden><div class="section-heading"><p class="eyebrow">IN THE EVENT RECAP</p><h2>Speaker credits</h2><p>Times refer to the V8 recap. Use them to find each name card in the player.</p></div><div id="credits-list"></div></section>
-      <footer>Comfort Measures Consulting <span aria-hidden="true">×</span> OTV Agency<br><small>Feedback is saved securely through Jotform. Review status is updated by the production team.</small></footer>
+      <footer>Comfort Measures Media <span aria-hidden="true">×</span> OTV Agency<br><small>Feedback is saved securely through Jotform. Review status is updated by the production team.</small></footer>
     </main>
   </div>
   <dialog id="feedback-dialog" aria-labelledby="feedback-title">

@@ -8,10 +8,10 @@ window.CMC_DATA = {
       "title": "Comfy Connections",
       "formEvent": "Comfy Connections — PAM Health Oct 28",
       "subtitle": "PAM Health · Wiregrass Ranch · October 28, 2026",
-      "description": "The recap, sizzle reels and six social shorts are ready for your review.",
+      "description": "Review the event recap, six Opus shorts and the YouTube publishing package.",
       "status": "Ready for review",
       "defaultAsset": "pam-recap",
-      "reviewHint": "Check the story, names, captions and preferred social clips. Submit a separate note for each change.",
+      "reviewHint": "Check the recap and Opus shorts, then review the YouTube thumbnail, title and description below.",
       "deliverables": [
         {
           "title": "Event recap",
@@ -19,19 +19,14 @@ window.CMC_DATA = {
           "detail": "7:58 · V8 with PAM intro and seven speaker credits"
         },
         {
-          "title": "Sizzle reels",
-          "status": "Review copies",
-          "detail": "Landscape V9 and vertical V8 · 1:04 each"
-        },
-        {
-          "title": "Social shorts",
+          "title": "Opus shorts",
           "status": "Drafts for review",
           "detail": "Six vertical clips with the Let’s Get Comfy outro"
         },
         {
-          "title": "Full synced recording",
-          "status": "Available",
-          "detail": "58:03 · V3 · Complete program source"
+          "title": "YouTube publishing package",
+          "status": "Draft for review",
+          "detail": "Thumbnail, title and description · Publishing awaits approval"
         }
       ],
       "assets": [
@@ -39,7 +34,7 @@ window.CMC_DATA = {
           "id": "pam-recap",
           "title": "Event recap",
           "detail": "7:58 · V8 · Fletcher-beat intro · Review copy",
-          "group": "Review videos",
+          "group": "Event recap",
           "kind": "video",
           "driveId": "1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm",
           "url": "https://drive.google.com/file/d/1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm/view?usp=drivesdk"
@@ -48,25 +43,27 @@ window.CMC_DATA = {
           "id": "pam-sizzle-landscape",
           "title": "Sizzle reel · Landscape",
           "detail": "1:04 · 1920×1080 · V9 · Review copy",
-          "group": "Review videos",
+          "group": "Additional event media",
           "kind": "video",
           "driveId": "16rmjle1U2w1Yl1nSlGcEigVCXnPsVqdk",
-          "url": "https://drive.google.com/file/d/16rmjle1U2w1Yl1nSlGcEigVCXnPsVqdk/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/16rmjle1U2w1Yl1nSlGcEigVCXnPsVqdk/view?usp=drivesdk",
+          "supplementary": true
         },
         {
           "id": "pam-sizzle-vertical",
           "title": "Sizzle reel · Vertical",
           "detail": "1:04 · 1080×1920 · V8 · Review copy",
-          "group": "Review videos",
+          "group": "Additional event media",
           "kind": "video",
           "driveId": "1Pw79pStdlFB6T6MnEw1w95_I8auZJnfe",
-          "url": "https://drive.google.com/file/d/1Pw79pStdlFB6T6MnEw1w95_I8auZJnfe/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1Pw79pStdlFB6T6MnEw1w95_I8auZJnfe/view?usp=drivesdk",
+          "supplementary": true
         },
         {
           "id": "pam-short-01",
           "title": "Short 01 · Mobile care",
           "detail": "Yvette Guzman · 0:42 · Draft v1",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1WsCOwMkK5YTLCcs4yugOTqt_OAf5rHP6",
           "url": "https://drive.google.com/file/d/1WsCOwMkK5YTLCcs4yugOTqt_OAf5rHP6/view?usp=drivesdk"
@@ -75,7 +72,7 @@ window.CMC_DATA = {
           "id": "pam-short-02",
           "title": "Short 02 · Patient connection",
           "detail": "Justin Beauchesne · 0:41 · Draft v2",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1QH2LTZ296vnF2J8_EQEXfHBL798vY71J",
           "url": "https://drive.google.com/file/d/1QH2LTZ296vnF2J8_EQEXfHBL798vY71J/view?usp=drivesdk"
@@ -84,7 +81,7 @@ window.CMC_DATA = {
           "id": "pam-short-03",
           "title": "Short 03 · Volunteering",
           "detail": "Chris Noble · 0:52 · Draft v1",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1aRvl5lM85wc5NQ0iKosSXpk6gPYyusqz",
           "url": "https://drive.google.com/file/d/1aRvl5lM85wc5NQ0iKosSXpk6gPYyusqz/view?usp=drivesdk"
@@ -93,7 +90,7 @@ window.CMC_DATA = {
           "id": "pam-short-04",
           "title": "Short 04 · Bedside dermatology",
           "detail": "Don Fischer · 0:42 · Draft v1",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1whTzZ-sGn9rUoVr3zYQuKX2BrJabZBkQ",
           "url": "https://drive.google.com/file/d/1whTzZ-sGn9rUoVr3zYQuKX2BrJabZBkQ/view?usp=drivesdk"
@@ -102,7 +99,7 @@ window.CMC_DATA = {
           "id": "pam-short-05",
           "title": "Short 05 · PAM welcome",
           "detail": "Ashley Ivy Coto · 1:01 · Draft v1",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1EohozU6LEkrN_u85QBgzj__234da7qqJ",
           "url": "https://drive.google.com/file/d/1EohozU6LEkrN_u85QBgzj__234da7qqJ/view?usp=drivesdk"
@@ -111,7 +108,7 @@ window.CMC_DATA = {
           "id": "pam-short-06",
           "title": "Short 06 · Why I serve",
           "detail": "Dr. Jake · 0:53 · Draft v1",
-          "group": "Social shorts",
+          "group": "Opus shorts",
           "kind": "video",
           "driveId": "1SsrRi8LthBFY4T_I3DQzFz_WlXR-RNel",
           "url": "https://drive.google.com/file/d/1SsrRi8LthBFY4T_I3DQzFz_WlXR-RNel/view?usp=drivesdk"
@@ -120,12 +117,24 @@ window.CMC_DATA = {
           "id": "pam-full",
           "title": "Full synced recording",
           "detail": "58:03 · V3 · Production source",
-          "group": "Full program",
+          "group": "Additional event media",
           "kind": "video",
           "driveId": "115izF_tt1Ej3-msuHhdEiKO7yPJwfPe9",
-          "url": "https://drive.google.com/file/d/115izF_tt1Ej3-msuHhdEiKO7yPJwfPe9/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/115izF_tt1Ej3-msuHhdEiKO7yPJwfPe9/view?usp=drivesdk",
+          "supplementary": true
         }
       ],
+      "youtube": {
+        "version": 1,
+        "status": "Draft for review",
+        "title": "Comfy Connections at PAM Health | October 2026 Recap",
+        "description": "Real conversations. Meaningful connections. Join Norman Harris for a look back at Comfy Connections at PAM Health Rehabilitation Hospital of Wiregrass Ranch on October 28, 2026.\n\nThis event recap brings together healthcare and community professionals for networking, shared stories, and conversations about service, advocacy, and patient support.\n\nFeaturing:\n• Norman Harris — Comfort Measures Consulting\n• Ashley Ivy Coto — PAM Health, Wiregrass Ranch\n• Chris Noble — Seniors in Service\n• Don Fischer — Mobile Dermatology Solutions\n• Jake Zazvrskey — Chiropractor\n• Justin Beauchesne — OPC Prosthetic Centers\n• Yvette Guzman — Olive Health\n\nThank you to PAM Health, our speakers, and everyone who joined us to connect and share their work in the community.\n\nSubscribe to Comfort Measures Media for more Comfy Connections highlights and Let’s Get Comfy conversations.\n\n#ComfyConnections #PAMHealth #HealthcareNetworking",
+        "thumbnail": "youtube/Comfy_Connections_PAM_Health_YouTube_Thumbnail_Draft_v1.jpg",
+        "thumbnailAlt": "Comfy Connections at PAM Health: seven event participants beneath a navy headline, with a sky-blue PAM Health Recap label.",
+        "thumbnailProvenance": "AI-assisted graphic layout based on authentic PAM event photo IMG_1197.jpg and the existing CMC Media logo. Draft for visual approval.",
+        "titleFile": "youtube/YouTube_Title_Draft_v1.txt",
+        "descriptionFile": "youtube/YouTube_Description_Draft_v1.txt"
+      },
       "credits": [
         {
           "name": "Norman Harris",
