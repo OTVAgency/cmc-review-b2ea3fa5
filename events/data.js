@@ -1,5 +1,5 @@
 window.CMC_DATA = {
-  "updated": "November 5, 2026",
+  "updated": "November 6, 2026",
   "form": "https://form.jotform.com/263085670628060",
   "projects": [
     {
@@ -16,7 +16,7 @@ window.CMC_DATA = {
         {
           "title": "Comfy Connection",
           "status": "Review copy",
-          "detail": "7:58 · Comfy Connection intro theme · Seven speaker credits"
+          "detail": "8:30 · Requested revisions, smoother B-roll and CMC Media watermark"
         },
         {
           "title": "Opus shorts",
@@ -33,11 +33,11 @@ window.CMC_DATA = {
         {
           "id": "pam-recap",
           "title": "Comfy Connection",
-          "detail": "7:58 · Review copy",
+          "detail": "8:30 · Revised November 6 · CMC Media watermark",
           "group": "Event recap",
           "kind": "video",
-          "driveId": "1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm",
-          "url": "https://drive.google.com/file/d/1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm/view?usp=drivesdk"
+          "driveId": "1L2Z4d28iEp1ubJxIU1XIUVnk3iZ5UZBf",
+          "url": "https://drive.google.com/file/d/1L2Z4d28iEp1ubJxIU1XIUVnk3iZ5UZBf/view?usp=drivesdk"
         },
         {
           "id": "pam-sizzle-landscape",
@@ -122,6 +122,16 @@ window.CMC_DATA = {
           "driveId": "115izF_tt1Ej3-msuHhdEiKO7yPJwfPe9",
           "url": "https://drive.google.com/file/d/115izF_tt1Ej3-msuHhdEiKO7yPJwfPe9/view?usp=drivesdk",
           "supplementary": true
+        },
+        {
+          "id": "pam-recap-previous-20261105",
+          "title": "Comfy Connection · Previous review",
+          "detail": "7:58 · November 5 review copy",
+          "group": "Additional event media",
+          "kind": "video",
+          "driveId": "1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm",
+          "url": "https://drive.google.com/file/d/1eSnn1BkHjlyT5hmkOV2N_mA4qf4ZaxAm/view?usp=drivesdk",
+          "supplementary": true
         }
       ],
       "youtube": {
@@ -164,19 +174,19 @@ window.CMC_DATA = {
           "name": "Jake Zazvrskey",
           "role": "Chiropractor",
           "organization": "",
-          "start": 230.76336666666668
+          "start": 262.2615
         },
         {
           "name": "Justin Beauchesne",
           "role": "Patient Advocate",
           "organization": "OPC Prosthetic Centers, Inc.",
-          "start": 328.2221
+          "start": 359.72023333333334
         },
         {
           "name": "Yvette Guzman",
           "role": "DNP, APRN, ACM · CEO",
           "organization": "Olive Health",
-          "start": 400.72786666666667
+          "start": 432.226
         }
       ]
     },
