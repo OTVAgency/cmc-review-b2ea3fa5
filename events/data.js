@@ -196,10 +196,10 @@ window.CMC_DATA = {
       "title": "CardioRenal Vision",
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
-      "description": "The 22 selected photos are delivered and available here. The updated B-roll and the 10:10 attendee interview compilation are edited and ready to share for the next review round.",
-      "status": "Photos delivered · Video review copies next",
-      "defaultAsset": "cardio-landscape",
-      "reviewHint": "Use the Larry Culver photo list to review the selections. Include the Lightroom album photo number in any photo feedback.",
+      "description": "The 10:10 attendee interview compilation is available for review. The 22 selected photos are delivered, and updated B-roll is ready to share in a separate update.",
+      "status": "Interview compilation ready for review",
+      "defaultAsset": "cardio-interviews-compilation-v1",
+      "reviewHint": "Include a timestamp for interview feedback or the Lightroom album number for photo feedback.",
       "deliverables": [
         {
           "title": "Event B-roll",
@@ -213,8 +213,8 @@ window.CMC_DATA = {
         },
         {
           "title": "Attendee interviews",
-          "status": "Edited · Review copy next",
-          "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. It’s ready to add to this review page."
+          "status": "Ready for review",
+          "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. Review it here and leave timestamped feedback."
         },
         {
           "title": "YouTube delivery",
@@ -223,6 +223,15 @@ window.CMC_DATA = {
         }
       ],
       "assets": [
+        {
+          "id": "cardio-interviews-compilation-v1",
+          "title": "Attendee interview compilation",
+          "detail": "10:10 · Seven conversations · Enhanced audio",
+          "group": "Review videos",
+          "kind": "video",
+          "driveId": "1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI",
+          "url": "https://drive.google.com/file/d/1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI/view?usp=drivesdk"
+        },
         {
           "id": "cardio-landscape",
           "title": "Event B-roll · Landscape",
@@ -727,8 +736,10 @@ window.CMC_DATA = {
           {
             "title": "Edited attendee interview compilation",
             "criteria": "At least 10 minutes of edited short attendee interviews.",
-            "status": "Edited · Review copy next",
-            "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. It’s ready to add to this review page."
+            "status": "Ready for review",
+            "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. Review it here and leave timestamped feedback.",
+            "asset": "cardio-interviews-compilation-v1",
+            "action": "Review interview compilation"
           },
           {
             "title": "Upload the interview compilation to YouTube",
