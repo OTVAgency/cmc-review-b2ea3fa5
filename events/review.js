@@ -25,7 +25,7 @@ function chooseAsset(id, focus = false) {
   selected = project.assets.find((asset) => asset.id === id) || project.assets[0];
   $("asset-title").textContent = selected.title;
   $("asset-detail").textContent = selected.detail;
-  $("asset-kind").textContent = selected.supplementary ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
+  $("asset-kind").textContent = selected.albumPhoto ? "Selected photo" : selected.supplementary || selected.unlisted ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
   // Use Drive's embedded viewer, retaining the file's existing account access.
   // Replacing the frame stops the previous video when the selection changes.
   clearTimeout(previewTimer);
@@ -40,7 +40,7 @@ function chooseAsset(id, focus = false) {
     clearTimeout(previewTimer);
     // Cross-origin load does not prove successful playback or account access.
     $("preview-status").textContent = selected.kind === "photo"
-      ? "Review the photo above. Include its frame number in your feedback."
+      ? "Review the photo above. Include its " + (selected.albumPhoto ? "album" : "frame") + " number in your feedback."
       : "Press Play above to review. Add the timestamp when leaving feedback.";
   });
   $("player").replaceChildren(frame);
@@ -61,19 +61,21 @@ function chooseAsset(id, focus = false) {
 }
 
 function renderLibrary() {
+  const assets = project.assets.filter((asset) => !asset.unlisted);
   $("media-list").replaceChildren();
   $("extras-list").replaceChildren();
   $("extras-section").hidden = !project.scope;
-  const mainCount = project.assets.filter((asset) => !asset.supplementary).length;
+  const mainCount = assets.filter((asset) => !asset.supplementary).length;
   $("asset-count").textContent = "(" + mainCount + ")";
-  const mainGroups = [...new Set(project.assets.filter((asset) => !asset.supplementary).map((asset) => asset.group))];
-  const extraGroups = [...new Set(project.assets.filter((asset) => asset.supplementary).map((asset) => asset.group))];
+  const mainGroups = [...new Set(assets.filter((asset) => !asset.supplementary).map((asset) => asset.group))];
+  const extraGroups = [...new Set(assets.filter((asset) => asset.supplementary).map((asset) => asset.group))];
   const groups = project.scope ? mainGroups : [...mainGroups, ...extraGroups];
   for (const name of groups) {
-    const supplementary = project.assets.filter((item) => item.group === name).every((item) => item.supplementary);
+    const items = assets.filter((item) => item.group === name);
+    const supplementary = items.every((item) => item.supplementary);
     const group = element(supplementary ? "details" : "section", undefined, supplementary ? "media-group extra-media" : "media-group");
-    group.append(element(supplementary ? "summary" : "h3", supplementary ? name + " (" + project.assets.filter((item) => item.group === name).length + ")" : name));
-    for (const asset of project.assets.filter((item) => item.group === name)) {
+    group.append(element(supplementary ? "summary" : "h3", supplementary ? name + " (" + items.length + ")" : name));
+    for (const asset of items) {
       const button = element("button", undefined, "media-choice");
       button.type = "button";
       button.dataset.asset = asset.id;
@@ -86,7 +88,7 @@ function renderLibrary() {
     $("media-list").append(group);
   }
   if (project.scope) {
-    for (const asset of project.assets.filter((item) => item.supplementary)) {
+    for (const asset of assets.filter((item) => item.supplementary)) {
       const button = element("button", undefined, "media-choice");
       button.type = "button";
       button.dataset.asset = asset.id;

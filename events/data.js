@@ -1,5 +1,5 @@
 window.CMC_DATA = {
-  "updated": "November 6, 2026",
+  "updated": "November 8, 2026",
   "form": "https://form.jotform.com/263085670628060",
   "projects": [
     {
@@ -196,10 +196,10 @@ window.CMC_DATA = {
       "title": "CardioRenal Vision",
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
-      "description": "Both B-roll drafts and the 21 video stills are available. The attendee interview compilation is still in production.",
-      "status": "Review drafts available",
+      "description": "Both B-roll drafts and 22 selected photographs by Larry Culver are available for review. The attendee interview compilation will be shared separately.",
+      "status": "Photo selections ready for review",
       "defaultAsset": "cardio-landscape",
-      "reviewHint": "Review both highlight formats and choose 5–7 video stills. Include frame numbers in your photo feedback.",
+      "reviewHint": "Use the Larry Culver photo list to review the selections. Include the Lightroom album photo number in any photo feedback.",
       "deliverables": [
         {
           "title": "Event B-roll",
@@ -207,9 +207,9 @@ window.CMC_DATA = {
           "detail": "Landscape and vertical editions · 0:59 each"
         },
         {
-          "title": "5–7 photos from video",
-          "status": "Selection needed",
-          "detail": "21 candidates; the editorial shortlist is marked"
+          "title": "Selected event photos",
+          "status": "Ready for review",
+          "detail": "22 full-size JPGs saved in the event’s Drive deliverables folder."
         },
         {
           "title": "Attendee interviews",
@@ -242,6 +242,226 @@ window.CMC_DATA = {
           "url": "https://drive.google.com/file/d/1qV5yvxBIcgdqWa0CsLRajDn2jBam-QOg/view?usp=drivesdk"
         },
         {
+          "id": "culver-18",
+          "title": "Photo 018 · IMG_1498.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 18,
+          "driveId": "13Jqmut3Jw2pamVA2ZknV87v32miAz_c0",
+          "url": "https://drive.google.com/file/d/13Jqmut3Jw2pamVA2ZknV87v32miAz_c0/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-22",
+          "title": "Photo 022 · IMG_1504.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 22,
+          "driveId": "1eKU3jlNYM8hQw1eDYt-qZdMStu18uTyQ",
+          "url": "https://drive.google.com/file/d/1eKU3jlNYM8hQw1eDYt-qZdMStu18uTyQ/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-23",
+          "title": "Photo 023 · IMG_1506.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 23,
+          "driveId": "1wGfcq5uH33HvfZPmgTy7-a129nqK7L3F",
+          "url": "https://drive.google.com/file/d/1wGfcq5uH33HvfZPmgTy7-a129nqK7L3F/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-31",
+          "title": "Photo 031 · IMG_1517.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 31,
+          "driveId": "1jY2CJpAoUZ6SdM0HUWFZDRYSIpzyafw4",
+          "url": "https://drive.google.com/file/d/1jY2CJpAoUZ6SdM0HUWFZDRYSIpzyafw4/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-37",
+          "title": "Photo 037 · IMG_1523.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 37,
+          "driveId": "1Ey4uEiunVlyYjAvqoHmAyF4vWRRxXLBv",
+          "url": "https://drive.google.com/file/d/1Ey4uEiunVlyYjAvqoHmAyF4vWRRxXLBv/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-39",
+          "title": "Photo 039 · IMG_1526.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 39,
+          "driveId": "1N-4_mb_HeDr2_Od7aSHFGIeuGJMcBWjM",
+          "url": "https://drive.google.com/file/d/1N-4_mb_HeDr2_Od7aSHFGIeuGJMcBWjM/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-40",
+          "title": "Photo 040 · IMG_1528.JPG",
+          "detail": "Karley · Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 40,
+          "driveId": "18B932zfct7NiAsatOL57Js8XCkJLl9sf",
+          "url": "https://drive.google.com/file/d/18B932zfct7NiAsatOL57Js8XCkJLl9sf/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-43",
+          "title": "Photo 043 · IMG_1535.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 43,
+          "driveId": "1HeySmoDhqCO4Cl6rRvg1YS0oI5A5SgIQ",
+          "url": "https://drive.google.com/file/d/1HeySmoDhqCO4Cl6rRvg1YS0oI5A5SgIQ/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-68",
+          "title": "Photo 068 · IMG_1573.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 68,
+          "driveId": "1P1G3SMDMlAh88Ofkte7yXGFyJO_MCS56",
+          "url": "https://drive.google.com/file/d/1P1G3SMDMlAh88Ofkte7yXGFyJO_MCS56/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-71",
+          "title": "Photo 071 · IMG_1577.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 71,
+          "driveId": "1j001ueyXoO0z6nNTqiZItsIqE9swFJtu",
+          "url": "https://drive.google.com/file/d/1j001ueyXoO0z6nNTqiZItsIqE9swFJtu/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-75",
+          "title": "Photo 075 · IMG_1586.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 75,
+          "driveId": "1gTY4Bli_PJ_heMzOuSD_45VxfQh74rIY",
+          "url": "https://drive.google.com/file/d/1gTY4Bli_PJ_heMzOuSD_45VxfQh74rIY/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-88",
+          "title": "Photo 088 · IMG_1602.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 88,
+          "driveId": "1idIAuqm6AVexvkjH3CIxOHHICqy5K1oY",
+          "url": "https://drive.google.com/file/d/1idIAuqm6AVexvkjH3CIxOHHICqy5K1oY/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-97",
+          "title": "Photo 097 · IMG_1619.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 97,
+          "driveId": "1oxjfiYJBWCLcILqorRRpb4xjLKAtcN8n",
+          "url": "https://drive.google.com/file/d/1oxjfiYJBWCLcILqorRRpb4xjLKAtcN8n/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-106",
+          "title": "Photo 106 · IMG_1632.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 106,
+          "driveId": "1zd057Tb9FsdMnMBVd9Xsb7fbsKiCrW3u",
+          "url": "https://drive.google.com/file/d/1zd057Tb9FsdMnMBVd9Xsb7fbsKiCrW3u/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-114",
+          "title": "Photo 114 · IMG_1648.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 114,
+          "driveId": "1PylxmrZODIj3BuIaaFOzU85E4-WzNc0P",
+          "url": "https://drive.google.com/file/d/1PylxmrZODIj3BuIaaFOzU85E4-WzNc0P/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-132",
+          "title": "Photo 132 · IMG_1671.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 132,
+          "driveId": "1PdDbxqxII_ffz7HjmeKdqSFMQT5cJksQ",
+          "url": "https://drive.google.com/file/d/1PdDbxqxII_ffz7HjmeKdqSFMQT5cJksQ/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-147",
+          "title": "Photo 147 · IMG_1692.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 147,
+          "driveId": "1bgRJ_AixGEdthA3nqVpOO5_zNMPzQPjT",
+          "url": "https://drive.google.com/file/d/1bgRJ_AixGEdthA3nqVpOO5_zNMPzQPjT/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-154",
+          "title": "Photo 154 · IMG_1702.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 154,
+          "driveId": "14UsPr5G4rev8m-saAA7AxDwR4CmFfpS7",
+          "url": "https://drive.google.com/file/d/14UsPr5G4rev8m-saAA7AxDwR4CmFfpS7/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-232",
+          "title": "Photo 232 · IMG_1826.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 232,
+          "driveId": "1EkLt7Srx18Yxbw1d28U7VjIeJYCVvCrv",
+          "url": "https://drive.google.com/file/d/1EkLt7Srx18Yxbw1d28U7VjIeJYCVvCrv/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-251",
+          "title": "Photo 251 · IMG_1854.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 251,
+          "driveId": "10n5qHJ0zBa6x6_8drNSoPmEVlvKrtAuD",
+          "url": "https://drive.google.com/file/d/10n5qHJ0zBa6x6_8drNSoPmEVlvKrtAuD/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-262",
+          "title": "Photo 262 · IMG_1869.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 262,
+          "driveId": "1CgBsDL4aLkL_FnMvrnbiavPNpvm9pEdR",
+          "url": "https://drive.google.com/file/d/1CgBsDL4aLkL_FnMvrnbiavPNpvm9pEdR/view?usp=drivesdk"
+        },
+        {
+          "id": "culver-220",
+          "title": "Photo 220 · IMG_1810.JPG",
+          "detail": "Larry Culver · Full-size JPG",
+          "group": "Larry Culver · Selected photos",
+          "kind": "photo",
+          "albumPhoto": 220,
+          "driveId": "1If0l2HuSjn4Gn5O0OidkuDPlNA2X1jah",
+          "url": "https://drive.google.com/file/d/1If0l2HuSjn4Gn5O0OidkuDPlNA2X1jah/view?usp=drivesdk"
+        },
+        {
           "id": "event-reel",
           "title": "CardioRenal event reel",
           "detail": "1:04 · Existing event reference",
@@ -259,7 +479,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1jpT7H1091WWqYbUK_mtpiJEXbVwjvMTl",
           "url": "https://drive.google.com/file/d/1jpT7H1091WWqYbUK_mtpiJEXbVwjvMTl/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-9",
@@ -269,7 +490,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1OtcXYKYMoWorhSt_nXtrmoOzLUfJRiqh",
           "url": "https://drive.google.com/file/d/1OtcXYKYMoWorhSt_nXtrmoOzLUfJRiqh/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-24",
@@ -279,7 +501,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1q2iayys-fscYPot2rVXKMj98j2vrgK7y",
           "url": "https://drive.google.com/file/d/1q2iayys-fscYPot2rVXKMj98j2vrgK7y/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-26",
@@ -289,7 +512,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1jjZq-SzWjZIFX2dnAP8G0j-2X7-99PtB",
           "url": "https://drive.google.com/file/d/1jjZq-SzWjZIFX2dnAP8G0j-2X7-99PtB/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-29",
@@ -299,7 +523,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1RGIRXa0mhQh4QLhgjRQscslDI1ZkiZo4",
           "url": "https://drive.google.com/file/d/1RGIRXa0mhQh4QLhgjRQscslDI1ZkiZo4/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-31",
@@ -309,7 +534,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1QCKPOvFp1ELlowXSb3FIqh7MfLE4G9Jm",
           "url": "https://drive.google.com/file/d/1QCKPOvFp1ELlowXSb3FIqh7MfLE4G9Jm/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-34",
@@ -319,7 +545,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1VNNJdW-wX6TLnu2qCNYrfhJo6PJIrGfP",
           "url": "https://drive.google.com/file/d/1VNNJdW-wX6TLnu2qCNYrfhJo6PJIrGfP/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-42",
@@ -329,7 +556,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "12JbXyYyMYrtM-vveuoG9rQxpFOIIk4ZF",
           "url": "https://drive.google.com/file/d/12JbXyYyMYrtM-vveuoG9rQxpFOIIk4ZF/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-60",
@@ -339,7 +567,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1g0psWTRfURTa8VjgAYCVKA1QV2cAM5vy",
           "url": "https://drive.google.com/file/d/1g0psWTRfURTa8VjgAYCVKA1QV2cAM5vy/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-65",
@@ -349,7 +578,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1t71xEcN65oK39tmciOacR2Tg15SIYO34",
           "url": "https://drive.google.com/file/d/1t71xEcN65oK39tmciOacR2Tg15SIYO34/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-68",
@@ -359,7 +589,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "17DOrKOpxnmWaBmYy-JUmHLRr_R_Edeug",
           "url": "https://drive.google.com/file/d/17DOrKOpxnmWaBmYy-JUmHLRr_R_Edeug/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-70",
@@ -369,7 +600,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1-wM-QR2rDiWGFFQ_cPKqe2C9l8amiZOQ",
           "url": "https://drive.google.com/file/d/1-wM-QR2rDiWGFFQ_cPKqe2C9l8amiZOQ/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-79",
@@ -379,7 +611,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1PtYV89wZmFUwjA4bLsGMJ_BPw0IEBYYv",
           "url": "https://drive.google.com/file/d/1PtYV89wZmFUwjA4bLsGMJ_BPw0IEBYYv/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-80",
@@ -389,7 +622,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "146L1hcYMkr3JBYfKVx6KeR00K2xNvIAC",
           "url": "https://drive.google.com/file/d/146L1hcYMkr3JBYfKVx6KeR00K2xNvIAC/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-81",
@@ -399,7 +633,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1WKTiMfUYJnh6vJ7j-fN0Gaf2y27EFvq5",
           "url": "https://drive.google.com/file/d/1WKTiMfUYJnh6vJ7j-fN0Gaf2y27EFvq5/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-84",
@@ -409,7 +644,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1UzOkmVTmFEcr8VsR2x_zoJKOqw3JPpcg",
           "url": "https://drive.google.com/file/d/1UzOkmVTmFEcr8VsR2x_zoJKOqw3JPpcg/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-87",
@@ -419,7 +655,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1-od2lELjD1U-MFcarTSCtMKCyiIdvzET",
           "url": "https://drive.google.com/file/d/1-od2lELjD1U-MFcarTSCtMKCyiIdvzET/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-118",
@@ -429,7 +666,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1QkjnPDXSSRguRJir41CVHKcV8S6c_nqj",
           "url": "https://drive.google.com/file/d/1QkjnPDXSSRguRJir41CVHKcV8S6c_nqj/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-124",
@@ -439,7 +677,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1h1OAWlsB_RX8q4sqdRUplFNUz5AatU_f",
           "url": "https://drive.google.com/file/d/1h1OAWlsB_RX8q4sqdRUplFNUz5AatU_f/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         },
         {
           "id": "frame-127",
@@ -449,7 +688,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "12q1UZPiAX8TYgV4bO_zqCIcA7NnOawSZ",
           "url": "https://drive.google.com/file/d/12q1UZPiAX8TYgV4bO_zqCIcA7NnOawSZ/view?usp=drivesdk",
-          "shortlisted": true
+          "shortlisted": true,
+          "unlisted": true
         },
         {
           "id": "frame-139",
@@ -459,7 +699,8 @@ window.CMC_DATA = {
           "kind": "photo",
           "driveId": "1Bwjs1UxkD6HGcCJN5JyeNLADkrB3PuiT",
           "url": "https://drive.google.com/file/d/1Bwjs1UxkD6HGcCJN5JyeNLADkrB3PuiT/view?usp=drivesdk",
-          "shortlisted": false
+          "shortlisted": false,
+          "unlisted": true
         }
       ],
       "scope": {
@@ -467,12 +708,13 @@ window.CMC_DATA = {
         "due": "November 6, 2026",
         "items": [
           {
-            "title": "5–7 photos pulled from video",
-            "criteria": "Select and deliver 5–7 final stills from the video content.",
-            "status": "Selection needed",
-            "detail": "21 candidates available; 12 editorial shortlist choices are marked.",
-            "asset": "frame-26",
-            "action": "Review photo candidates"
+            "title": "22 selected event photographs",
+            "criteria": "Review the selected photographs from Larry Culver’s symposium album.",
+            "status": "Delivered to Drive",
+            "detail": "22 full-size JPGs saved in the event’s Drive deliverables folder.",
+            "asset": "culver-40",
+            "action": "Review selected photos",
+            "complete": true
           },
           {
             "title": "Conference B-roll video",
