@@ -196,15 +196,15 @@ window.CMC_DATA = {
       "title": "CardioRenal Vision",
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
-      "description": "Both B-roll drafts and 22 selected photographs by Larry Culver are available for review. The attendee interview compilation will be shared separately.",
-      "status": "Photo selections ready for review",
+      "description": "The 22 selected photos are delivered and available here. The updated B-roll and the 10:10 attendee interview compilation are edited and ready to share for the next review round.",
+      "status": "Photos delivered · Video review copies next",
       "defaultAsset": "cardio-landscape",
       "reviewHint": "Use the Larry Culver photo list to review the selections. Include the Lightroom album photo number in any photo feedback.",
       "deliverables": [
         {
           "title": "Event B-roll",
-          "status": "Drafts for review",
-          "detail": "Landscape and vertical editions · 0:59 each"
+          "status": "Revisions ready to share",
+          "detail": "The revised landscape and vertical cuts are ready. The earlier review cuts are still available below."
         },
         {
           "title": "Selected event photos",
@@ -213,13 +213,13 @@ window.CMC_DATA = {
         },
         {
           "title": "Attendee interviews",
-          "status": "In production",
-          "detail": "The ten-minute compilation is not yet ready for client review"
+          "status": "Edited · Review copy next",
+          "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. It’s ready to add to this review page."
         },
         {
           "title": "YouTube delivery",
-          "status": "Awaiting sign-off",
-          "detail": "Publishing follows approval of the completed edit"
+          "status": "Awaiting interview approval",
+          "detail": "YouTube scheduling follows approval of the interview compilation."
         }
       ],
       "assets": [
@@ -719,22 +719,22 @@ window.CMC_DATA = {
           {
             "title": "Conference B-roll video",
             "criteria": "Create an edited B-roll highlight video.",
-            "status": "Drafts for review",
-            "detail": "Landscape and vertical drafts are available, each 0:59. Final approval is pending.",
+            "status": "Revisions ready to share",
+            "detail": "The revised landscape and vertical cuts are ready. The earlier review cuts are still available below.",
             "asset": "cardio-landscape",
-            "action": "Review B-roll"
+            "action": "View earlier B-roll"
           },
           {
             "title": "Edited attendee interview compilation",
             "criteria": "At least 10 minutes of edited short attendee interviews.",
-            "status": "In production",
-            "detail": "The requested full compilation is not yet ready for review."
+            "status": "Edited · Review copy next",
+            "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. It’s ready to add to this review page."
           },
           {
             "title": "Upload the interview compilation to YouTube",
             "criteria": "Publish the completed, approved attendee interview video to YouTube.",
-            "status": "Pending approved edit",
-            "detail": "No YouTube upload has been made for this deliverable."
+            "status": "Awaiting interview approval",
+            "detail": "YouTube scheduling follows approval of the interview compilation."
           }
         ]
       }
