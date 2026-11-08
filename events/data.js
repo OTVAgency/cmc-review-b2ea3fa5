@@ -294,7 +294,7 @@ window.CMC_DATA = {
         {
           "id": "culver-39",
           "title": "Photo 039 · IMG_1526.JPG",
-          "detail": "Larry Culver · Full-size JPG",
+          "detail": "Norman Harris Jr. and Karley Horst · Larry Culver · Full-size JPG",
           "group": "Larry Culver · Selected photos",
           "kind": "photo",
           "albumPhoto": 39,
@@ -304,7 +304,7 @@ window.CMC_DATA = {
         {
           "id": "culver-40",
           "title": "Photo 040 · IMG_1528.JPG",
-          "detail": "Karley · Larry Culver · Full-size JPG",
+          "detail": "Karley Horst · Larry Culver · Full-size JPG",
           "group": "Larry Culver · Selected photos",
           "kind": "photo",
           "albumPhoto": 40,
