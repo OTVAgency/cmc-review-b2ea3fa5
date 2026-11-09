@@ -824,10 +824,10 @@ window.CMC_DATA = {
           {
             "title": "22 selected event photographs",
             "criteria": "Review the selected photographs from Larry Culver’s symposium album.",
-            "status": "Delivered to Drive",
-            "detail": "22 full-size JPGs saved in the event’s Drive deliverables folder.",
+            "status": "Branded set delivered to Drive",
+            "detail": "22 full-size JPGs with the CardioRenal Vision watermark. Select any photo below to preview it.",
             "asset": "culver-40",
-            "action": "Review selected photos",
+            "action": "Review branded photos",
             "complete": true
           },
           {
@@ -840,11 +840,19 @@ window.CMC_DATA = {
           },
           {
             "title": "Edited attendee interview compilation",
-            "criteria": "At least 10 minutes of edited short attendee interviews.",
+            "criteria": "Review the edited symposium recap drawn from the attendee interviews.",
             "status": "Ready for review",
-            "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. Review it here and leave timestamped feedback.",
+            "detail": "The 7:40 symposium recap includes all 11 interview takes. Review it here and leave timestamped feedback.",
             "asset": "cardio-interviews-compilation-v1",
-            "action": "Review interview compilation"
+            "action": "Review V5.4 recap"
+          },
+          {
+            "title": "Top 10 Opus shorts",
+            "criteria": "Review ten selected vertical clips from the symposium.",
+            "status": "Ready for review",
+            "detail": "The ten highest-ranked Opus clips include the CardioRenal Vision outro.",
+            "asset": "cardio-opus-01",
+            "action": "Review the shorts"
           },
           {
             "title": "Upload the interview compilation to YouTube",
