@@ -196,7 +196,7 @@ window.CMC_DATA = {
       "title": "CardioRenal Vision",
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
-      "description": "Review the updated 7:40 symposium recap, the top 10 branded Opus shorts, and 22 watermarked event photos.",
+      "description": "Review the updated symposium recap, the top 10 branded Opus shorts, 22 watermarked event photos, and the B-roll cuts, including Anika’s promo.",
       "status": "Media handoff complete · YouTube upload pending",
       "defaultAsset": "cardio-interviews-compilation-v1",
       "reviewHint": "Include a timestamp for a recap or short, or the Lightroom album number for a photo.",
@@ -205,6 +205,11 @@ window.CMC_DATA = {
           "title": "Event B-roll",
           "status": "Delivered to Drive",
           "detail": "The approved landscape and vertical B-roll cuts are in the client handoff folder."
+        },
+        {
+          "title": "Anika Promo B-Roll",
+          "status": "Delivered to Drive",
+          "detail": "Anika’s vertical promo and matching JPG cover are in the client handoff folder."
         },
         {
           "title": "Selected event photos",
@@ -255,6 +260,16 @@ window.CMC_DATA = {
           "driveId": "1f8aqDdn5_pdyGelBPUMM_2rljd03JKT4",
           "url": "https://drive.google.com/file/d/1f8aqDdn5_pdyGelBPUMM_2rljd03JKT4/view?usp=drivesdk",
           "orientation": "vertical"
+        },
+        {
+          "id": "cardio-anika-promo",
+          "title": "Anika Promo B-Roll",
+          "detail": "1:09 · Vertical promo · Matching cover included in the client handoff",
+          "group": "Review videos",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1asLNoIdZdYRsUyo5QVL0orGzMM8JX2DO",
+          "url": "https://drive.google.com/file/d/1asLNoIdZdYRsUyo5QVL0orGzMM8JX2DO/view?usp=drivesdk"
         },
         {
           "id": "cardio-opus-01",
@@ -848,6 +863,15 @@ window.CMC_DATA = {
             "detail": "The approved landscape and vertical B-roll cuts are in the client handoff folder.",
             "asset": "cardio-landscape",
             "action": "View delivered B-roll",
+            "complete": true
+          },
+          {
+            "title": "Anika Promo B-Roll",
+            "criteria": "Provide Anika’s vertical CardioRenal Vision promo and its matching cover.",
+            "status": "Delivered to Drive",
+            "detail": "The promo and cover are in 05 - Anika Promo B-Roll in the client handoff folder.",
+            "asset": "cardio-anika-promo",
+            "action": "Watch Anika’s promo",
             "complete": true
           },
           {
