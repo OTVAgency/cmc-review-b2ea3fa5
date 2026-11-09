@@ -834,12 +834,12 @@ window.CMC_DATA = {
         },
         {
           "id": "cardio-interviews-previous-1010",
-          "title": "Earlier attendee interview compilation",
-          "detail": "10:10 · Seven conversations · Enhanced audio",
+          "title": "Attendee interview compilation · Recorder audio",
+          "detail": "10:10 · Seven conversations · Synced external mic audio",
           "group": "Extras · Reference cuts",
           "kind": "video",
-          "driveId": "1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI",
-          "url": "https://drive.google.com/file/d/1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI/view?usp=drivesdk",
+          "driveId": "1EOsZi17ATYQF8PqIM3rtAx33RY85ME2F",
+          "url": "https://drive.google.com/file/d/1EOsZi17ATYQF8PqIM3rtAx33RY85ME2F/view?usp=drivesdk",
           "supplementary": true
         }
       ],
