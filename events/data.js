@@ -1,5 +1,5 @@
 window.CMC_DATA = {
-  "updated": "November 8, 2026",
+  "updated": "November 9, 2026",
   "form": "https://form.jotform.com/263085670628060",
   "projects": [
     {
@@ -196,10 +196,10 @@ window.CMC_DATA = {
       "title": "CardioRenal Vision",
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
-      "description": "The 10:10 attendee interview compilation is available for review. The 22 selected photos are delivered, and updated B-roll is ready to share in a separate update.",
-      "status": "Interview compilation ready for review",
+      "description": "Review the updated 7:40 symposium recap, the top 10 branded Opus shorts, and 22 watermarked event photos.",
+      "status": "Updated recap, shorts and photos ready for review",
       "defaultAsset": "cardio-interviews-compilation-v1",
-      "reviewHint": "Include a timestamp for interview feedback or the Lightroom album number for photo feedback.",
+      "reviewHint": "Include a timestamp for a recap or short, or the Lightroom album number for a photo.",
       "deliverables": [
         {
           "title": "Event B-roll",
@@ -209,12 +209,17 @@ window.CMC_DATA = {
         {
           "title": "Selected event photos",
           "status": "Ready for review",
-          "detail": "22 full-size JPGs saved in the event’s Drive deliverables folder."
+          "detail": "22 full-size JPGs with the CardioRenal Vision watermark. Select any photo below to preview it."
         },
         {
           "title": "Attendee interviews",
           "status": "Ready for review",
-          "detail": "The 10:10 compilation includes seven conversations with enhanced dialogue. Review it here and leave timestamped feedback."
+          "detail": "The 7:40 symposium recap includes all 11 interview takes. Review it here and leave timestamped feedback."
+        },
+        {
+          "title": "Top 10 Opus shorts",
+          "status": "Ready for review",
+          "detail": "Ten vertical highlights from the symposium with the branded CardioRenal Vision outro."
         },
         {
           "title": "YouTube delivery",
@@ -225,12 +230,12 @@ window.CMC_DATA = {
       "assets": [
         {
           "id": "cardio-interviews-compilation-v1",
-          "title": "Attendee interview compilation",
-          "detail": "10:10 · Seven conversations · Enhanced audio",
+          "title": "CardioRenal Vision Symposium Recap",
+          "detail": "7:40 · V5.4 · All 11 interview takes · Transparent CardioRenal watermark",
           "group": "Review videos",
           "kind": "video",
-          "driveId": "1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI",
-          "url": "https://drive.google.com/file/d/1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI/view?usp=drivesdk"
+          "driveId": "1LpKDEf5lj8MS8gVEF1Q1foTyeRDW_LO6",
+          "url": "https://drive.google.com/file/d/1LpKDEf5lj8MS8gVEF1Q1foTyeRDW_LO6/view?usp=drivesdk"
         },
         {
           "id": "cardio-landscape",
@@ -251,224 +256,314 @@ window.CMC_DATA = {
           "url": "https://drive.google.com/file/d/1qV5yvxBIcgdqWa0CsLRajDn2jBam-QOg/view?usp=drivesdk"
         },
         {
+          "id": "cardio-opus-01",
+          "title": "01 · Congestive Heart Failure: The Subtle Sign of Fluid Buildup",
+          "detail": "0:57 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "12mzf9Lkz_jq2JYhRnJml_LSEQrRmJa67",
+          "url": "https://drive.google.com/file/d/12mzf9Lkz_jq2JYhRnJml_LSEQrRmJa67/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-02",
+          "title": "02 · Cardio-Renal Care: The Best Practice Every Nursing Home Needs",
+          "detail": "0:50 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1aYmZq_w7tgFdISBS2p0rJeEsV2b7ssh6",
+          "url": "https://drive.google.com/file/d/1aYmZq_w7tgFdISBS2p0rJeEsV2b7ssh6/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-03",
+          "title": "03 · Bedside Pacemaker Check: Avoiding an Unnecessary Hospital Trip",
+          "detail": "0:47 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1WHJ8Tp-xwxthRWc2Dz2hdVK6oKn6qxRm",
+          "url": "https://drive.google.com/file/d/1WHJ8Tp-xwxthRWc2Dz2hdVK6oKn6qxRm/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-04",
+          "title": "04 · Early Warning Signs: Spot Changes Before Hospitalization",
+          "detail": "0:37 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1Knlp_sV2eyAikBQoZ3vV-KGIMAAJGTAp",
+          "url": "https://drive.google.com/file/d/1Knlp_sV2eyAikBQoZ3vV-KGIMAAJGTAp/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-05",
+          "title": "05 · Swollen Ankles: A Warning Sign of Heart or Kidney Issues?",
+          "detail": "0:58 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1AKvTGN7mQ-cCY0KrRBEXW3GWbF4CELcQ",
+          "url": "https://drive.google.com/file/d/1AKvTGN7mQ-cCY0KrRBEXW3GWbF4CELcQ/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-06",
+          "title": "06 · Choosing a Care Facility? Tour Before You Decide",
+          "detail": "0:43 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1sYMWzvaJuHQ809uTP4Qwm5MKu1U7RbXk",
+          "url": "https://drive.google.com/file/d/1sYMWzvaJuHQ809uTP4Qwm5MKu1U7RbXk/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-07",
+          "title": "07 · 3 Essential Skills for Success in Long-Term Care",
+          "detail": "0:47 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1NHjgLWO5EsREl8l4MjPLwbDNfrif6uiQ",
+          "url": "https://drive.google.com/file/d/1NHjgLWO5EsREl8l4MjPLwbDNfrif6uiQ/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-08",
+          "title": "08 · 3 Essential Skills for Working in Long-Term Care",
+          "detail": "0:42 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1laR_7aYybcL1xx0jAe9rUaGSajkWcLok",
+          "url": "https://drive.google.com/file/d/1laR_7aYybcL1xx0jAe9rUaGSajkWcLok/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-09",
+          "title": "09 · 3 Essential Skills for Long-Term Care: Compassion, Patience & Empathy",
+          "detail": "0:45 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "1K1piYj5i_mp6aUm7KiLUIv7atF7bueew",
+          "url": "https://drive.google.com/file/d/1K1piYj5i_mp6aUm7KiLUIv7atF7bueew/view?usp=drivesdk"
+        },
+        {
+          "id": "cardio-opus-10",
+          "title": "10 · A Simple Daily Habit for a Healthier Heart and Kidneys",
+          "detail": "0:40 · Vertical short · CardioRenal outro",
+          "group": "Top 10 Opus shorts",
+          "kind": "video",
+          "driveId": "19NtOB7GZ406XYlMuEw2RAW7DeVy6JBw2",
+          "url": "https://drive.google.com/file/d/19NtOB7GZ406XYlMuEw2RAW7DeVy6JBw2/view?usp=drivesdk"
+        },
+        {
           "id": "culver-18",
           "title": "Photo 018 · IMG_1498.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 18,
-          "driveId": "13Jqmut3Jw2pamVA2ZknV87v32miAz_c0",
-          "url": "https://drive.google.com/file/d/13Jqmut3Jw2pamVA2ZknV87v32miAz_c0/view?usp=drivesdk"
+          "driveId": "1bT3433BPwMyP2s_9Ereylk-xeEGn9lIP",
+          "url": "https://drive.google.com/file/d/1bT3433BPwMyP2s_9Ereylk-xeEGn9lIP/view?usp=drivesdk"
         },
         {
           "id": "culver-22",
           "title": "Photo 022 · IMG_1504.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 22,
-          "driveId": "1eKU3jlNYM8hQw1eDYt-qZdMStu18uTyQ",
-          "url": "https://drive.google.com/file/d/1eKU3jlNYM8hQw1eDYt-qZdMStu18uTyQ/view?usp=drivesdk"
+          "driveId": "1qK7WaQ15QCcumv3zY0F2nlMcAgI2BFHf",
+          "url": "https://drive.google.com/file/d/1qK7WaQ15QCcumv3zY0F2nlMcAgI2BFHf/view?usp=drivesdk"
         },
         {
           "id": "culver-23",
           "title": "Photo 023 · IMG_1506.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 23,
-          "driveId": "1wGfcq5uH33HvfZPmgTy7-a129nqK7L3F",
-          "url": "https://drive.google.com/file/d/1wGfcq5uH33HvfZPmgTy7-a129nqK7L3F/view?usp=drivesdk"
+          "driveId": "17owESM0qBX9gZBlx7js8Cz-2AdxpD--m",
+          "url": "https://drive.google.com/file/d/17owESM0qBX9gZBlx7js8Cz-2AdxpD--m/view?usp=drivesdk"
         },
         {
           "id": "culver-31",
           "title": "Photo 031 · IMG_1517.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 31,
-          "driveId": "1jY2CJpAoUZ6SdM0HUWFZDRYSIpzyafw4",
-          "url": "https://drive.google.com/file/d/1jY2CJpAoUZ6SdM0HUWFZDRYSIpzyafw4/view?usp=drivesdk"
+          "driveId": "1HTuKGMScWxpqs_jggHZFCabSpPRb_4bP",
+          "url": "https://drive.google.com/file/d/1HTuKGMScWxpqs_jggHZFCabSpPRb_4bP/view?usp=drivesdk"
         },
         {
           "id": "culver-37",
           "title": "Photo 037 · IMG_1523.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 37,
-          "driveId": "1Ey4uEiunVlyYjAvqoHmAyF4vWRRxXLBv",
-          "url": "https://drive.google.com/file/d/1Ey4uEiunVlyYjAvqoHmAyF4vWRRxXLBv/view?usp=drivesdk"
+          "driveId": "1887xWmcmmwsWrWF-8BFZVFaZDvEjMTu8",
+          "url": "https://drive.google.com/file/d/1887xWmcmmwsWrWF-8BFZVFaZDvEjMTu8/view?usp=drivesdk"
         },
         {
           "id": "culver-39",
           "title": "Photo 039 · IMG_1526.JPG",
-          "detail": "Norman Harris Jr. and Karley Horst · Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Norman Harris Jr. and Karley Horst · Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 39,
-          "driveId": "1N-4_mb_HeDr2_Od7aSHFGIeuGJMcBWjM",
-          "url": "https://drive.google.com/file/d/1N-4_mb_HeDr2_Od7aSHFGIeuGJMcBWjM/view?usp=drivesdk"
+          "driveId": "1CLVujgNQL1fSkujOOrcw5BpPS7x3o6Gz",
+          "url": "https://drive.google.com/file/d/1CLVujgNQL1fSkujOOrcw5BpPS7x3o6Gz/view?usp=drivesdk"
         },
         {
           "id": "culver-40",
           "title": "Photo 040 · IMG_1528.JPG",
-          "detail": "Karley Horst · Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Karley Horst · Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 40,
-          "driveId": "18B932zfct7NiAsatOL57Js8XCkJLl9sf",
-          "url": "https://drive.google.com/file/d/18B932zfct7NiAsatOL57Js8XCkJLl9sf/view?usp=drivesdk"
+          "driveId": "1Bh85fh7LE5hlFSi7sjl35QDQijjKC0Dm",
+          "url": "https://drive.google.com/file/d/1Bh85fh7LE5hlFSi7sjl35QDQijjKC0Dm/view?usp=drivesdk"
         },
         {
           "id": "culver-43",
           "title": "Photo 043 · IMG_1535.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 43,
-          "driveId": "1HeySmoDhqCO4Cl6rRvg1YS0oI5A5SgIQ",
-          "url": "https://drive.google.com/file/d/1HeySmoDhqCO4Cl6rRvg1YS0oI5A5SgIQ/view?usp=drivesdk"
+          "driveId": "1VnyySDQchl0GACCI86avFf0U8ANM4m2w",
+          "url": "https://drive.google.com/file/d/1VnyySDQchl0GACCI86avFf0U8ANM4m2w/view?usp=drivesdk"
         },
         {
           "id": "culver-68",
           "title": "Photo 068 · IMG_1573.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 68,
-          "driveId": "1P1G3SMDMlAh88Ofkte7yXGFyJO_MCS56",
-          "url": "https://drive.google.com/file/d/1P1G3SMDMlAh88Ofkte7yXGFyJO_MCS56/view?usp=drivesdk"
+          "driveId": "1T9k-URXwdTI0JyMhJmmqZpu6HME4nAOe",
+          "url": "https://drive.google.com/file/d/1T9k-URXwdTI0JyMhJmmqZpu6HME4nAOe/view?usp=drivesdk"
         },
         {
           "id": "culver-71",
           "title": "Photo 071 · IMG_1577.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 71,
-          "driveId": "1j001ueyXoO0z6nNTqiZItsIqE9swFJtu",
-          "url": "https://drive.google.com/file/d/1j001ueyXoO0z6nNTqiZItsIqE9swFJtu/view?usp=drivesdk"
+          "driveId": "1lCt86LC9fhN2yTvEl5xgkuUmn4TPVNL-",
+          "url": "https://drive.google.com/file/d/1lCt86LC9fhN2yTvEl5xgkuUmn4TPVNL-/view?usp=drivesdk"
         },
         {
           "id": "culver-75",
           "title": "Photo 075 · IMG_1586.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 75,
-          "driveId": "1gTY4Bli_PJ_heMzOuSD_45VxfQh74rIY",
-          "url": "https://drive.google.com/file/d/1gTY4Bli_PJ_heMzOuSD_45VxfQh74rIY/view?usp=drivesdk"
+          "driveId": "1B5I43fnY7bChxNaNlVTEINeTePfjAdQe",
+          "url": "https://drive.google.com/file/d/1B5I43fnY7bChxNaNlVTEINeTePfjAdQe/view?usp=drivesdk"
         },
         {
           "id": "culver-88",
           "title": "Photo 088 · IMG_1602.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 88,
-          "driveId": "1idIAuqm6AVexvkjH3CIxOHHICqy5K1oY",
-          "url": "https://drive.google.com/file/d/1idIAuqm6AVexvkjH3CIxOHHICqy5K1oY/view?usp=drivesdk"
+          "driveId": "1PoluO1teij-xVJDwcqvve9ay81Jvq4KD",
+          "url": "https://drive.google.com/file/d/1PoluO1teij-xVJDwcqvve9ay81Jvq4KD/view?usp=drivesdk"
         },
         {
           "id": "culver-97",
           "title": "Photo 097 · IMG_1619.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 97,
-          "driveId": "1oxjfiYJBWCLcILqorRRpb4xjLKAtcN8n",
-          "url": "https://drive.google.com/file/d/1oxjfiYJBWCLcILqorRRpb4xjLKAtcN8n/view?usp=drivesdk"
+          "driveId": "1koboa4Hyz0yTh6f9AWz7hDhCAdY6GwVj",
+          "url": "https://drive.google.com/file/d/1koboa4Hyz0yTh6f9AWz7hDhCAdY6GwVj/view?usp=drivesdk"
         },
         {
           "id": "culver-106",
           "title": "Photo 106 · IMG_1632.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 106,
-          "driveId": "1zd057Tb9FsdMnMBVd9Xsb7fbsKiCrW3u",
-          "url": "https://drive.google.com/file/d/1zd057Tb9FsdMnMBVd9Xsb7fbsKiCrW3u/view?usp=drivesdk"
+          "driveId": "1bjb0pza1IepIW0D6QvMSsOfAqBVB281l",
+          "url": "https://drive.google.com/file/d/1bjb0pza1IepIW0D6QvMSsOfAqBVB281l/view?usp=drivesdk"
         },
         {
           "id": "culver-114",
           "title": "Photo 114 · IMG_1648.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 114,
-          "driveId": "1PylxmrZODIj3BuIaaFOzU85E4-WzNc0P",
-          "url": "https://drive.google.com/file/d/1PylxmrZODIj3BuIaaFOzU85E4-WzNc0P/view?usp=drivesdk"
+          "driveId": "1w0k1eASDvfhbuvXtMm71YYHJUEkg17JN",
+          "url": "https://drive.google.com/file/d/1w0k1eASDvfhbuvXtMm71YYHJUEkg17JN/view?usp=drivesdk"
         },
         {
           "id": "culver-132",
           "title": "Photo 132 · IMG_1671.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 132,
-          "driveId": "1PdDbxqxII_ffz7HjmeKdqSFMQT5cJksQ",
-          "url": "https://drive.google.com/file/d/1PdDbxqxII_ffz7HjmeKdqSFMQT5cJksQ/view?usp=drivesdk"
+          "driveId": "1kgIq0Tgj1cuWqPGJPlCUBBn-egjaNE8x",
+          "url": "https://drive.google.com/file/d/1kgIq0Tgj1cuWqPGJPlCUBBn-egjaNE8x/view?usp=drivesdk"
         },
         {
           "id": "culver-147",
           "title": "Photo 147 · IMG_1692.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 147,
-          "driveId": "1bgRJ_AixGEdthA3nqVpOO5_zNMPzQPjT",
-          "url": "https://drive.google.com/file/d/1bgRJ_AixGEdthA3nqVpOO5_zNMPzQPjT/view?usp=drivesdk"
+          "driveId": "1IJ4yTh2BgwYpF_uUxzFQps8BJiCR5slT",
+          "url": "https://drive.google.com/file/d/1IJ4yTh2BgwYpF_uUxzFQps8BJiCR5slT/view?usp=drivesdk"
         },
         {
           "id": "culver-154",
           "title": "Photo 154 · IMG_1702.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 154,
-          "driveId": "14UsPr5G4rev8m-saAA7AxDwR4CmFfpS7",
-          "url": "https://drive.google.com/file/d/14UsPr5G4rev8m-saAA7AxDwR4CmFfpS7/view?usp=drivesdk"
+          "driveId": "1ElldpQFUw2i75Es7PltwF5sDufABDi6J",
+          "url": "https://drive.google.com/file/d/1ElldpQFUw2i75Es7PltwF5sDufABDi6J/view?usp=drivesdk"
         },
         {
           "id": "culver-232",
           "title": "Photo 232 · IMG_1826.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 232,
-          "driveId": "1EkLt7Srx18Yxbw1d28U7VjIeJYCVvCrv",
-          "url": "https://drive.google.com/file/d/1EkLt7Srx18Yxbw1d28U7VjIeJYCVvCrv/view?usp=drivesdk"
+          "driveId": "1-O1OmDAADsj_6nFUaZ9Ck7QSedxzlWqP",
+          "url": "https://drive.google.com/file/d/1-O1OmDAADsj_6nFUaZ9Ck7QSedxzlWqP/view?usp=drivesdk"
         },
         {
           "id": "culver-251",
           "title": "Photo 251 · IMG_1854.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 251,
-          "driveId": "10n5qHJ0zBa6x6_8drNSoPmEVlvKrtAuD",
-          "url": "https://drive.google.com/file/d/10n5qHJ0zBa6x6_8drNSoPmEVlvKrtAuD/view?usp=drivesdk"
+          "driveId": "1Y4x46GXiKmTUGMo2pa5i8VEwOeBxdUID",
+          "url": "https://drive.google.com/file/d/1Y4x46GXiKmTUGMo2pa5i8VEwOeBxdUID/view?usp=drivesdk"
         },
         {
           "id": "culver-262",
           "title": "Photo 262 · IMG_1869.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 262,
-          "driveId": "1CgBsDL4aLkL_FnMvrnbiavPNpvm9pEdR",
-          "url": "https://drive.google.com/file/d/1CgBsDL4aLkL_FnMvrnbiavPNpvm9pEdR/view?usp=drivesdk"
+          "driveId": "15NabOp-3wZmtwWuGfq3Fbld-PsA4MXZF",
+          "url": "https://drive.google.com/file/d/15NabOp-3wZmtwWuGfq3Fbld-PsA4MXZF/view?usp=drivesdk"
         },
         {
           "id": "culver-220",
           "title": "Photo 220 · IMG_1810.JPG",
-          "detail": "Larry Culver · Full-size JPG",
-          "group": "Larry Culver · Selected photos",
+          "detail": "Larry Culver · Full-size JPG · CardioRenal watermark",
+          "group": "Branded event photos · 22 selections",
           "kind": "photo",
           "albumPhoto": 220,
-          "driveId": "1If0l2HuSjn4Gn5O0OidkuDPlNA2X1jah",
-          "url": "https://drive.google.com/file/d/1If0l2HuSjn4Gn5O0OidkuDPlNA2X1jah/view?usp=drivesdk"
+          "driveId": "1hG1kynNBRVcRPERLUxtPOHJ0YmhHq6O-",
+          "url": "https://drive.google.com/file/d/1hG1kynNBRVcRPERLUxtPOHJ0YmhHq6O-/view?usp=drivesdk"
         },
         {
           "id": "event-reel",
@@ -710,6 +805,16 @@ window.CMC_DATA = {
           "url": "https://drive.google.com/file/d/1Bwjs1UxkD6HGcCJN5JyeNLADkrB3PuiT/view?usp=drivesdk",
           "shortlisted": false,
           "unlisted": true
+        },
+        {
+          "id": "cardio-interviews-previous-1010",
+          "title": "Earlier attendee interview compilation",
+          "detail": "10:10 · Seven conversations · Enhanced audio",
+          "group": "Extras · Reference cuts",
+          "kind": "video",
+          "driveId": "1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI",
+          "url": "https://drive.google.com/file/d/1w95BWKWPepp0_F_hTPmZK5XRlNtZfgGI/view?usp=drivesdk",
+          "supplementary": true
         }
       ],
       "scope": {
