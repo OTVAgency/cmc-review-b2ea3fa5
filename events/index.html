@@ -8,9 +8,9 @@
   <meta name="description" content="CMC event media review for Norman Harris Jr. Watch review cuts and send timestamped revision feedback to OTV Agency.">
   <title>CMC · Event media review</title>
   <link rel="icon" href="cmc-logo.png">
-  <link rel="stylesheet" href="review.css?v=20261106-1">
-  <script src="data.js?v=20261109-2" defer></script>
-  <script src="review.js?v=20261108-1" defer></script>
+  <link rel="stylesheet" href="review.css?v=20261109-3">
+  <script src="data.js?v=20261109-3" defer></script>
+  <script src="review.js?v=20261109-3" defer></script>
 </head>
 <body>
   <a href="#project" class="skip">Skip to event review</a>
@@ -27,16 +27,27 @@
         <div><p class="eyebrow">EVENT MEDIA REVIEW</p><h1 id="event-title">Event media review</h1><p class="subtitle" id="event-subtitle"></p><p class="description" id="event-description"></p></div>
         <div class="hero-status"><span class="status" id="event-status"></span><p>Review copies · Subject to approval</p></div>
       </section>
+      <nav id="cardio-review-jumps" class="cardio-review-jumps" aria-label="Jump to review content" hidden>
+        <button type="button" data-review-jump="recap">Recap</button>
+        <button type="button" data-review-jump="shorts">Shorts</button>
+        <button type="button" data-review-jump="photos">Photos</button>
+        <button type="button" data-review-jump="checklist">Checklist</button>
+      </nav>
       <section id="scope-section" class="scope-section" hidden aria-labelledby="scope-heading">
         <div class="scope-heading"><div><p class="eyebrow">YOUR REQUESTED SCOPE</p><h2 id="scope-heading">Deliverable checklist</h2><p id="scope-source"></p></div><span id="scope-progress" class="status"></span></div>
         <ol id="scope-list" class="scope-list"></ol>
         <p class="scope-note">The production team updates these statuses. Use each item’s feedback button for changes or approval.</p>
       </section>
       <section class="review-instructions" aria-label="How to review"><span class="instruction-number">1</span><span>Choose a video or photo.</span><span class="instruction-number">2</span><span>Note the timestamp or frame number.</span><span class="instruction-number">3</span><span>Select <strong>Leave feedback</strong> and send your note.</span></section>
-      <section class="review-layout" aria-label="Media review">
+      <section id="review-layout" class="review-layout" aria-label="Media review">
         <div class="review-card">
           <div class="preview-head"><div><p class="eyebrow">NOW REVIEWING</p><h2 id="asset-title"></h2><p id="asset-detail"></p></div><span id="asset-kind" class="tag"></span></div>
           <div class="player" id="player"><iframe id="media-preview" title="Selected media preview" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+          <div id="cardio-item-nav" class="cardio-item-nav" aria-label="Browse selected media" hidden>
+            <button id="cardio-prev" type="button">← Previous</button>
+            <span id="cardio-item-position" aria-live="polite"></span>
+            <button id="cardio-next" type="button">Next →</button>
+          </div>
           <p id="preview-status" class="preview-status" role="status">Loading the selected preview…</p>
           <div class="player-actions"><a id="open-media" class="text-link" target="_blank" rel="noopener noreferrer">Open in Drive ↗</a><button id="feedback-current" class="button">Leave feedback for this item →</button></div>
           <p class="access-note">Preview unavailable or asking for sign-in? Use Open in Drive with your CMC Google account, then return here. Newly uploaded videos may need processing before playback.</p>

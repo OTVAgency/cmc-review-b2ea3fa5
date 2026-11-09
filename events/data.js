@@ -197,34 +197,34 @@ window.CMC_DATA = {
       "formEvent": "CardioRenal Vision",
       "subtitle": "Conference media · Highlights, photos and interviews",
       "description": "Review the updated 7:40 symposium recap, the top 10 branded Opus shorts, and 22 watermarked event photos.",
-      "status": "Updated recap, shorts and photos ready for review",
+      "status": "Media handoff complete · YouTube upload pending",
       "defaultAsset": "cardio-interviews-compilation-v1",
       "reviewHint": "Include a timestamp for a recap or short, or the Lightroom album number for a photo.",
       "deliverables": [
         {
           "title": "Event B-roll",
-          "status": "Revisions ready to share",
-          "detail": "The revised landscape and vertical cuts are ready. The earlier review cuts are still available below."
+          "status": "Delivered to Drive",
+          "detail": "The approved landscape and vertical B-roll cuts are in the client handoff folder."
         },
         {
           "title": "Selected event photos",
-          "status": "Ready for review",
-          "detail": "22 full-size JPGs with the CardioRenal Vision watermark. Select any photo below to preview it."
+          "status": "Delivered to Drive",
+          "detail": "22 full-size watermarked JPGs are in the client handoff folder."
         },
         {
           "title": "Attendee interviews",
-          "status": "Ready for review",
-          "detail": "The 7:40 symposium recap includes all 11 interview takes. Review it here and leave timestamped feedback."
+          "status": "Delivered to Drive",
+          "detail": "Recap V5.4 includes all 11 interview takes and is in the client handoff folder."
         },
         {
           "title": "Top 10 Opus shorts",
-          "status": "Ready for review",
-          "detail": "Ten vertical highlights from the symposium with the branded CardioRenal Vision outro."
+          "status": "Delivered to Drive",
+          "detail": "The top 10 branded vertical clips are in the client handoff folder."
         },
         {
           "title": "YouTube delivery",
-          "status": "Awaiting interview approval",
-          "detail": "YouTube scheduling follows approval of the interview compilation."
+          "status": "Pending upload",
+          "detail": "YouTube upload is the remaining checklist item."
         }
       ],
       "assets": [
@@ -240,20 +240,21 @@ window.CMC_DATA = {
         {
           "id": "cardio-landscape",
           "title": "Event B-roll · Landscape",
-          "detail": "0:59 · 1080p · Review draft",
+          "detail": "0:59 · 1080p · Delivered B-roll",
           "group": "Review videos",
           "kind": "video",
-          "driveId": "1Pm6BDAYRXh_LI0l53ZePdfknmW3ifBnd",
-          "url": "https://drive.google.com/file/d/1Pm6BDAYRXh_LI0l53ZePdfknmW3ifBnd/view?usp=drivesdk"
+          "driveId": "1Vqc8Nv3DCZa9LsKqa0M82oHoJwjGyleR",
+          "url": "https://drive.google.com/file/d/1Vqc8Nv3DCZa9LsKqa0M82oHoJwjGyleR/view?usp=drivesdk"
         },
         {
           "id": "cardio-vertical",
           "title": "Event B-roll · Vertical",
-          "detail": "0:59 · 1080p · Review draft",
+          "detail": "0:59 · 1080p · Delivered B-roll",
           "group": "Review videos",
           "kind": "video",
-          "driveId": "1qV5yvxBIcgdqWa0CsLRajDn2jBam-QOg",
-          "url": "https://drive.google.com/file/d/1qV5yvxBIcgdqWa0CsLRajDn2jBam-QOg/view?usp=drivesdk"
+          "driveId": "1f8aqDdn5_pdyGelBPUMM_2rljd03JKT4",
+          "url": "https://drive.google.com/file/d/1f8aqDdn5_pdyGelBPUMM_2rljd03JKT4/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-01",
@@ -262,7 +263,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "12mzf9Lkz_jq2JYhRnJml_LSEQrRmJa67",
-          "url": "https://drive.google.com/file/d/12mzf9Lkz_jq2JYhRnJml_LSEQrRmJa67/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/12mzf9Lkz_jq2JYhRnJml_LSEQrRmJa67/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-02",
@@ -271,7 +273,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1aYmZq_w7tgFdISBS2p0rJeEsV2b7ssh6",
-          "url": "https://drive.google.com/file/d/1aYmZq_w7tgFdISBS2p0rJeEsV2b7ssh6/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1aYmZq_w7tgFdISBS2p0rJeEsV2b7ssh6/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-03",
@@ -280,7 +283,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1WHJ8Tp-xwxthRWc2Dz2hdVK6oKn6qxRm",
-          "url": "https://drive.google.com/file/d/1WHJ8Tp-xwxthRWc2Dz2hdVK6oKn6qxRm/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1WHJ8Tp-xwxthRWc2Dz2hdVK6oKn6qxRm/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-04",
@@ -289,7 +293,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1Knlp_sV2eyAikBQoZ3vV-KGIMAAJGTAp",
-          "url": "https://drive.google.com/file/d/1Knlp_sV2eyAikBQoZ3vV-KGIMAAJGTAp/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1Knlp_sV2eyAikBQoZ3vV-KGIMAAJGTAp/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-05",
@@ -298,7 +303,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1AKvTGN7mQ-cCY0KrRBEXW3GWbF4CELcQ",
-          "url": "https://drive.google.com/file/d/1AKvTGN7mQ-cCY0KrRBEXW3GWbF4CELcQ/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1AKvTGN7mQ-cCY0KrRBEXW3GWbF4CELcQ/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-06",
@@ -307,7 +313,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1sYMWzvaJuHQ809uTP4Qwm5MKu1U7RbXk",
-          "url": "https://drive.google.com/file/d/1sYMWzvaJuHQ809uTP4Qwm5MKu1U7RbXk/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1sYMWzvaJuHQ809uTP4Qwm5MKu1U7RbXk/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-07",
@@ -316,7 +323,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1NHjgLWO5EsREl8l4MjPLwbDNfrif6uiQ",
-          "url": "https://drive.google.com/file/d/1NHjgLWO5EsREl8l4MjPLwbDNfrif6uiQ/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1NHjgLWO5EsREl8l4MjPLwbDNfrif6uiQ/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-08",
@@ -325,7 +333,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1laR_7aYybcL1xx0jAe9rUaGSajkWcLok",
-          "url": "https://drive.google.com/file/d/1laR_7aYybcL1xx0jAe9rUaGSajkWcLok/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1laR_7aYybcL1xx0jAe9rUaGSajkWcLok/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-09",
@@ -334,7 +343,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "1K1piYj5i_mp6aUm7KiLUIv7atF7bueew",
-          "url": "https://drive.google.com/file/d/1K1piYj5i_mp6aUm7KiLUIv7atF7bueew/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/1K1piYj5i_mp6aUm7KiLUIv7atF7bueew/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "cardio-opus-10",
@@ -343,7 +353,8 @@ window.CMC_DATA = {
           "group": "Top 10 Opus shorts",
           "kind": "video",
           "driveId": "19NtOB7GZ406XYlMuEw2RAW7DeVy6JBw2",
-          "url": "https://drive.google.com/file/d/19NtOB7GZ406XYlMuEw2RAW7DeVy6JBw2/view?usp=drivesdk"
+          "url": "https://drive.google.com/file/d/19NtOB7GZ406XYlMuEw2RAW7DeVy6JBw2/view?usp=drivesdk",
+          "orientation": "vertical"
         },
         {
           "id": "culver-18",
@@ -824,8 +835,8 @@ window.CMC_DATA = {
           {
             "title": "22 selected event photographs",
             "criteria": "Review the selected photographs from Larry Culver’s symposium album.",
-            "status": "Branded set delivered to Drive",
-            "detail": "22 full-size JPGs with the CardioRenal Vision watermark. Select any photo below to preview it.",
+            "status": "Delivered to Drive",
+            "detail": "22 full-size watermarked JPGs are in the client handoff folder.",
             "asset": "culver-40",
             "action": "Review branded photos",
             "complete": true
@@ -833,32 +844,36 @@ window.CMC_DATA = {
           {
             "title": "Conference B-roll video",
             "criteria": "Create an edited B-roll highlight video.",
-            "status": "Revisions ready to share",
-            "detail": "The revised landscape and vertical cuts are ready. The earlier review cuts are still available below.",
+            "status": "Delivered to Drive",
+            "detail": "The approved landscape and vertical B-roll cuts are in the client handoff folder.",
             "asset": "cardio-landscape",
-            "action": "View earlier B-roll"
+            "action": "View delivered B-roll",
+            "complete": true
           },
           {
             "title": "Edited attendee interview compilation",
             "criteria": "Review the edited symposium recap drawn from the attendee interviews.",
-            "status": "Ready for review",
-            "detail": "The 7:40 symposium recap includes all 11 interview takes. Review it here and leave timestamped feedback.",
+            "status": "Delivered to Drive",
+            "detail": "Recap V5.4 includes all 11 interview takes and is in the client handoff folder.",
             "asset": "cardio-interviews-compilation-v1",
-            "action": "Review V5.4 recap"
+            "action": "Review V5.4 recap",
+            "complete": true
           },
           {
             "title": "Top 10 Opus shorts",
             "criteria": "Review ten selected vertical clips from the symposium.",
-            "status": "Ready for review",
-            "detail": "The ten highest-ranked Opus clips include the CardioRenal Vision outro.",
+            "status": "Delivered to Drive",
+            "detail": "The top 10 branded vertical clips are in the client handoff folder.",
             "asset": "cardio-opus-01",
-            "action": "Review the shorts"
+            "action": "Review the shorts",
+            "complete": true
           },
           {
             "title": "Upload the interview compilation to YouTube",
             "criteria": "Publish the completed, approved attendee interview video to YouTube.",
-            "status": "Awaiting interview approval",
-            "detail": "YouTube scheduling follows approval of the interview compilation."
+            "status": "Pending upload",
+            "detail": "YouTube upload is the remaining checklist item.",
+            "complete": false
           }
         ]
       }

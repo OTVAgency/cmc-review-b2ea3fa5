@@ -8,6 +8,42 @@ let project;
 let selected;
 let feedbackOpener;
 let previewTimer;
+const phoneLayout = window.matchMedia("(max-width: 760px)");
+
+function isCardioRenal() {
+  return project.id === "cardiorenal";
+}
+
+function scrollToReview(target) {
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  target.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+}
+
+function mediaSequence() {
+  if (!isCardioRenal() || (!selected.albumPhoto && !selected.id.startsWith("cardio-opus-"))) return [];
+  return project.assets.filter((asset) => asset.group === selected.group && !asset.unlisted);
+}
+
+function updateItemNavigation() {
+  const items = mediaSequence();
+  $("cardio-item-nav").hidden = !items.length;
+  if (!items.length) return;
+  const position = items.indexOf(selected);
+  $("cardio-item-position").textContent = (selected.albumPhoto ? "Photo " : "Short ") + (position + 1) + " of " + items.length;
+  $("cardio-prev").disabled = position === 0;
+  $("cardio-next").disabled = position === items.length - 1;
+}
+
+function applyPhoneLayout() {
+  const mobile = isCardioRenal() && phoneLayout.matches;
+  $("project").classList.toggle("cardio-phone", mobile);
+  $("cardio-review-jumps").hidden = !mobile;
+  const layout = $("review-layout");
+  const scope = $("scope-section");
+  const instructions = document.querySelector(".review-instructions");
+  if (mobile) layout.after(scope, instructions);
+  else layout.before(scope, instructions);
+}
 
 function element(tag, text, className) {
   const item = document.createElement(tag);
@@ -24,6 +60,8 @@ function clock(seconds) {
 function chooseAsset(id, focus = false) {
   selected = project.assets.find((asset) => asset.id === id) || project.assets[0];
   $("asset-title").textContent = selected.title;
+  $("player").classList.toggle("vertical-preview", selected.orientation === "vertical");
+  updateItemNavigation();
   $("asset-detail").textContent = selected.detail;
   $("asset-kind").textContent = selected.albumPhoto ? "Selected photo" : selected.supplementary || selected.unlisted ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
   // Use Drive's embedded viewer, retaining the file's existing account access.
@@ -57,7 +95,10 @@ function chooseAsset(id, focus = false) {
   url.hash = project.id;
   url.searchParams.set("item", selected.id);
   history.replaceState(null, "", url);
-  if (focus) $("player").scrollIntoView({ behavior: "smooth", block: "center" });
+  if (focus) {
+    if (isCardioRenal() && phoneLayout.matches) scrollToReview($("review-layout"));
+    else $("player").scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 }
 
 function renderLibrary() {
@@ -73,8 +114,16 @@ function renderLibrary() {
   for (const name of groups) {
     const items = assets.filter((item) => item.group === name);
     const supplementary = items.every((item) => item.supplementary);
-    const group = element(supplementary ? "details" : "section", undefined, supplementary ? "media-group extra-media" : "media-group");
-    group.append(element(supplementary ? "summary" : "h3", supplementary ? name + " (" + items.length + ")" : name));
+    const category = isCardioRenal() && !supplementary
+      ? items.some((item) => item.albumPhoto) ? "photos"
+        : items.some((item) => item.id.startsWith("cardio-opus-")) ? "shorts" : "videos"
+      : null;
+    const disclosure = supplementary || (category && category !== "videos");
+    const group = element(disclosure ? "details" : "section", undefined,
+      supplementary ? "media-group extra-media" : category ? "media-group cardio-media-group" : "media-group");
+    if (category) group.id = "cardio-group-" + category;
+    if (category && disclosure) group.open = !phoneLayout.matches;
+    group.append(element(disclosure ? "summary" : "h3", disclosure ? name + " (" + items.length + ")" : name));
     for (const asset of items) {
       const button = element("button", undefined, "media-choice");
       button.type = "button";
@@ -110,6 +159,7 @@ function renderProject() {
   $("event-status").textContent = project.status;
   $("review-hint").textContent = project.reviewHint;
   renderScope();
+  applyPhoneLayout();
   document.querySelectorAll(".nav-item").forEach((link) => {
     if (link.hash === "#" + project.id) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
@@ -142,6 +192,9 @@ function renderProject() {
   renderLibrary();
   const wanted = new URL(location.href).searchParams.get("item");
   chooseAsset(project.assets.some((asset) => asset.id === wanted) ? wanted : project.defaultAsset);
+  const group = selected.albumPhoto ? $("cardio-group-photos") :
+    selected.id.startsWith("cardio-opus-") ? $("cardio-group-shorts") : null;
+  if (group) group.open = true;
 }
 
 function renderScope() {
@@ -244,5 +297,29 @@ $("revision-form").addEventListener("submit", () => {
 $("feedback-dialog").addEventListener("close", () => {
   feedbackOpener?.focus();
 });
+$("cardio-review-jumps").addEventListener("click", (event) => {
+  const target = event.target.closest("button")?.dataset.reviewJump;
+  if (!target) return;
+  if (target === "recap") {
+    if (selected.id !== project.defaultAsset) chooseAsset(project.defaultAsset);
+    scrollToReview($("review-layout"));
+  } else if (target === "checklist") {
+    scrollToReview($("scope-section"));
+  } else {
+    const group = $("cardio-group-" + target);
+    if (group) {
+      group.open = true;
+      scrollToReview(group);
+    }
+  }
+});
+for (const [id, offset] of [["cardio-prev", -1], ["cardio-next", 1]]) {
+  $(id).addEventListener("click", () => {
+    const items = mediaSequence();
+    const item = items[items.indexOf(selected) + offset];
+    if (item) chooseAsset(item.id);
+  });
+}
+phoneLayout.addEventListener("change", applyPhoneLayout);
 window.addEventListener("hashchange", renderProject);
 renderProject();
