@@ -1,5 +1,5 @@
 window.CMC_DATA = {
-  "updated": "November 11, 2026",
+  "updated": "November 12, 2026",
   "form": "https://form.jotform.com/263085670628060",
   "projects": [
     {
@@ -985,12 +985,12 @@ window.CMC_DATA = {
         {
           "id": "bcp-short-03",
           "title": "Short 03 · Care after discharge",
-          "detail": "0:18 · Branded interview excerpt · CMC Media watermark · Cory Created",
+          "detail": "0:27 · Extended opening includes her name introduction · Updated captions · CMC Media watermark · Cory Created",
           "group": "Cory Created",
           "kind": "video",
           "orientation": "vertical",
-          "driveId": "1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5",
-          "url": "https://drive.google.com/file/d/1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5/view?usp=drivesdk"
+          "driveId": "1TDZyhjObtV-a5Jsj9mFT601Pxy-jwbSa",
+          "url": "https://drive.google.com/file/d/1TDZyhjObtV-a5Jsj9mFT601Pxy-jwbSa/view"
         },
         {
           "id": "bcp-opus-01",
