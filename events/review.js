@@ -41,7 +41,10 @@ function applyPhoneLayout() {
   const layout = $("review-layout");
   const scope = $("scope-section");
   const instructions = document.querySelector(".review-instructions");
-  if (mobile) layout.after(scope, instructions);
+  if (mobile) {
+    layout.before(scope);
+    layout.after(instructions);
+  }
   else layout.before(scope, instructions);
 }
 
@@ -202,13 +205,14 @@ function renderScope() {
   $("deliverables-section").hidden = Boolean(project.scope);
   $("scope-list").replaceChildren();
   if (!project.scope) return;
+  $("scope-section").open = false;
   $("scope-source").textContent = "Requested " + project.scope.requested + " · Due " + project.scope.due;
   const complete = project.scope.items.filter((item) => item.complete).length;
-  $("scope-progress").textContent = complete + " of " + project.scope.items.length + " complete";
+  $("scope-progress").textContent = complete + " of " + project.scope.items.length + " available";
   for (const item of project.scope.items) {
     const row = element("li", undefined, "scope-item");
     const mark = element("span", item.complete ? "✓" : "○", "scope-mark");
-    mark.setAttribute("aria-label", item.complete ? "Complete" : "Not yet complete");
+    mark.setAttribute("aria-label", item.complete ? "Available for review" : "Not yet available");
     const copy = element("div", undefined, "scope-copy");
     copy.append(element("h3", item.title), element("p", item.criteria), element("small", item.detail));
     const actions = element("div", undefined, "scope-actions");
@@ -304,6 +308,7 @@ $("cardio-review-jumps").addEventListener("click", (event) => {
     if (selected.id !== project.defaultAsset) chooseAsset(project.defaultAsset);
     scrollToReview($("review-layout"));
   } else if (target === "checklist") {
+    $("scope-section").open = true;
     scrollToReview($("scope-section"));
   } else {
     const group = $("cardio-group-" + target);

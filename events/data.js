@@ -1001,9 +1001,10 @@ window.CMC_DATA = {
             "title": "Standalone full panel",
             "criteria": "Deliver the full panel as a separate edited video.",
             "status": "Ready for selection",
-            "detail": "Both full-session framing options are available above.",
+            "detail": "Both full-session framing options are available in the review library.",
             "asset": "bcp-full-panel",
-            "action": "Compare panel views"
+            "action": "Compare panel views",
+            "complete": true
           },
           {
             "title": "Attendee interview compilation",
@@ -1011,7 +1012,8 @@ window.CMC_DATA = {
             "status": "Ready for review",
             "detail": "The conference compilation contains 10:25 of edited attendee interviews.",
             "asset": "bcp-compilation-v9",
-            "action": "Watch compilation"
+            "action": "Watch compilation",
+            "complete": true
           },
           {
             "title": "One combined conference film",
@@ -1019,19 +1021,22 @@ window.CMC_DATA = {
             "status": "Ready for review",
             "detail": "39:27 combined conference film with the latest music and transition revision.",
             "asset": "bcp-compilation-v9",
-            "action": "Watch compilation"
+            "action": "Watch compilation",
+            "complete": true
           },
           {
             "title": "Three vertical social shorts",
             "criteria": "Run the edited film through the shorts workflow to create social content.",
             "status": "Selection in progress",
-            "detail": "Compilation candidates are in review; selected clips receive final branding and the BCP outro."
+            "detail": "Compilation candidates are in review; selected clips receive final branding and the BCP outro.",
+            "complete": false
           },
           {
             "title": "Upload the combined film to YouTube",
             "criteria": "Publish the completed, approved 35–45-minute film to YouTube.",
             "status": "Pending approved edit",
-            "detail": "No YouTube upload has been made for this deliverable."
+            "detail": "No YouTube upload has been made for this deliverable.",
+            "complete": false
           }
         ]
       }

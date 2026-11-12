@@ -8,9 +8,9 @@
   <meta name="description" content="CMC event media review for Norman Harris Jr. Watch review cuts and send timestamped revision feedback to OTV Agency.">
   <title>CMC · Event media review</title>
   <link rel="icon" href="cmc-logo.png">
-  <link rel="stylesheet" href="review.css?v=20261109-3">
-  <script src="data.js?v=20261111-bcp-panel-choices" defer></script>
-  <script src="review.js?v=20261109-3" defer></script>
+  <link rel="stylesheet" href="review.css?v=20261111-checklist">
+  <script src="data.js?v=20261111-checklist" defer></script>
+  <script src="review.js?v=20261111-checklist" defer></script>
 </head>
 <body>
   <a href="#project" class="skip">Skip to event review</a>
@@ -33,11 +33,12 @@
         <button type="button" data-review-jump="photos">Photos</button>
         <button type="button" data-review-jump="checklist">Checklist</button>
       </nav>
-      <section id="scope-section" class="scope-section" hidden aria-labelledby="scope-heading">
-        <div class="scope-heading"><div><p class="eyebrow">YOUR REQUESTED SCOPE</p><h2 id="scope-heading">Deliverable checklist</h2><p id="scope-source"></p></div><span id="scope-progress" class="status"></span></div>
+      <details id="scope-section" class="scope-section" hidden>
+        <summary class="scope-heading"><span><span class="eyebrow">YOUR DELIVERABLES</span><span id="scope-heading" class="scope-title">Deliverable checklist</span></span><span id="scope-progress" class="status"></span><span class="scope-chevron" aria-hidden="true">⌄</span></summary>
+        <p id="scope-source"></p>
         <ol id="scope-list" class="scope-list"></ol>
-        <p class="scope-note">The production team updates these statuses. Use each item’s feedback button for changes or approval.</p>
-      </section>
+        <p class="scope-note">Checked items are available for review. Approval and publishing are tracked separately. Use each item’s feedback button for changes or approval.</p>
+      </details>
       <section class="review-instructions" aria-label="How to review"><span class="instruction-number">1</span><span>Choose a video or photo.</span><span class="instruction-number">2</span><span>Note the timestamp or frame number.</span><span class="instruction-number">3</span><span>Select <strong>Leave feedback</strong> and send your note.</span></section>
       <section id="review-layout" class="review-layout" aria-label="Media review">
         <div class="review-card">
