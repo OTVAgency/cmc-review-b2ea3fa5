@@ -908,10 +908,10 @@ window.CMC_DATA = {
       "title": "BCP Conference",
       "formEvent": "BCP Conference",
       "subtitle": "Best Care Practices Annual Conference & Trade Show",
-      "description": "Review the complete conference compilation and choose your preferred full-panel framing below.",
-      "status": "Films ready for review",
+      "description": "Review the full films and social shorts. Compare the two panel views, then browse Cory Created and Software Generated clips.",
+      "status": "Films and shorts ready for review",
       "defaultAsset": "bcp-full-panel",
-      "reviewHint": "Compare Original wide view and Speaker-focused version, then tell us which you prefer. Both contain the same full session and enhanced audio. Review the compilation and leave timestamped feedback here.",
+      "reviewHint": "Choose your preferred panel view and review the shorts in two groups: Cory Created and Software Generated. Leave timestamped feedback for any changes.",
       "deliverables": [
         {
           "title": "Standalone full panel",
@@ -921,12 +921,12 @@ window.CMC_DATA = {
         {
           "title": "Edutainment film",
           "status": "Ready for review",
-          "detail": "39:27 · Completed compilation with the latest music and transition revision"
+          "detail": "39:27 · Latest compilation with verified panel names, upbeat music and CMC Media watermark"
         },
         {
           "title": "Three vertical social shorts",
           "status": "Ready for review",
-          "detail": "Three branded interview excerpts with CMC Media watermark."
+          "detail": "Three Cory Created interview shorts, plus eight selected Software Generated clips with branded outros."
         },
         {
           "title": "YouTube delivery",
@@ -938,35 +938,35 @@ window.CMC_DATA = {
         {
           "id": "bcp-full-panel",
           "title": "Full panel · Original wide view",
-          "detail": "61:37 · Complete session · Original wide framing · Enhanced audio",
+          "detail": "61:37 · Complete session · Original wide framing · Enhanced audio · CMC Media watermark",
           "group": "Full panel · Choose your preferred view",
           "kind": "video",
-          "driveId": "1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2",
-          "url": "https://drive.google.com/file/d/1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2/view?usp=drivesdk"
+          "driveId": "1dac8USeJ-jtYJrnUlfR0OBkZaXCGXmFG",
+          "url": "https://drive.google.com/file/d/1dac8USeJ-jtYJrnUlfR0OBkZaXCGXmFG/view?usp=drivesdk"
         },
         {
           "id": "bcp-full-panel-cropped",
           "title": "Full panel · Speaker-focused version",
-          "detail": "61:37 · Same complete session and enhanced audio · Tighter speaker framing",
+          "detail": "61:37 · Same complete session and enhanced audio · Tighter speaker framing · CMC Media watermark",
           "group": "Full panel · Choose your preferred view",
           "kind": "video",
-          "driveId": "13EhrMKJ9ZF78vhgILsXKb9TDyTcWSRx0",
-          "url": "https://drive.google.com/file/d/13EhrMKJ9ZF78vhgILsXKb9TDyTcWSRx0/view?usp=drivesdk"
+          "driveId": "1Z-15pk8lFLTFguJatAVNzOLlJ70Emff-",
+          "url": "https://drive.google.com/file/d/1Z-15pk8lFLTFguJatAVNzOLlJ70Emff-/view?usp=drivesdk"
         },
         {
           "id": "bcp-compilation-v9",
           "title": "Care Teams at Work · Conference compilation",
-          "detail": "39:27 · Panel highlights and 10:25 of attendee interviews · Upbeat music and smooth transitions",
+          "detail": "39:27 · Latest master with verified panel names · CMC Media watermark",
           "group": "Conference compilation",
           "kind": "video",
-          "driveId": "1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM",
-          "url": "https://drive.google.com/file/d/1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM/view?usp=drivesdk"
+          "driveId": "1Xuak9y48C9kWRkG0Lx-NNQEAj-Tb-J-4",
+          "url": "https://drive.google.com/file/d/1Xuak9y48C9kWRkG0Lx-NNQEAj-Tb-J-4/view?usp=drivesdk"
         },
         {
           "id": "bcp-short-01",
           "title": "Short 01 · Putting patients first",
-          "detail": "0:12 · Branded interview excerpt · CMC Media watermark",
-          "group": "Three branded social shorts",
+          "detail": "0:12 · Branded interview excerpt · CMC Media watermark · Cory Created",
+          "group": "Cory Created",
           "kind": "video",
           "orientation": "vertical",
           "driveId": "1RfQ7G7fjpx0wh1_6czPNQo6IaG8pc8tg",
@@ -975,8 +975,8 @@ window.CMC_DATA = {
         {
           "id": "bcp-short-02",
           "title": "Short 02 · Listen to patients and families",
-          "detail": "0:23 · Branded interview excerpt · CMC Media watermark",
-          "group": "Three branded social shorts",
+          "detail": "0:23 · Branded interview excerpt · CMC Media watermark · Cory Created",
+          "group": "Cory Created",
           "kind": "video",
           "orientation": "vertical",
           "driveId": "1b89GTdEuaQ1OwIx5ehW8slA7s7KU_Q7Z",
@@ -985,12 +985,92 @@ window.CMC_DATA = {
         {
           "id": "bcp-short-03",
           "title": "Short 03 · Care after discharge",
-          "detail": "0:18 · Branded interview excerpt · CMC Media watermark",
-          "group": "Three branded social shorts",
+          "detail": "0:18 · Branded interview excerpt · CMC Media watermark · Cory Created",
+          "group": "Cory Created",
           "kind": "video",
           "orientation": "vertical",
           "driveId": "1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5",
           "url": "https://drive.google.com/file/d/1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-01",
+          "title": "Community Engagement Ideas for Healthcare Organizations",
+          "detail": "1:01 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1r-zbfFhVgiXrQNqzzw7iwtsc8JDKDRqh",
+          "url": "https://drive.google.com/file/d/1r-zbfFhVgiXrQNqzzw7iwtsc8JDKDRqh/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-02",
+          "title": "Just Culture: Fix the Process, Not the Person",
+          "detail": "0:58 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1R01bm13GkP4G8xWfmuCCFAJkr105PQRo",
+          "url": "https://drive.google.com/file/d/1R01bm13GkP4G8xWfmuCCFAJkr105PQRo/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-03",
+          "title": "Listen to Patients: How Honest Conversations Shape Better Care",
+          "detail": "0:43 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1yk11MTyDxEHk45aCND4XwD0GHcz5fk9F",
+          "url": "https://drive.google.com/file/d/1yk11MTyDxEHk45aCND4XwD0GHcz5fk9F/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-04",
+          "title": "How to Communicate Calmly During a Difficult Situation",
+          "detail": "0:53 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1L01odP4GCMuxd05lKumTpMurLMqr9A9Q",
+          "url": "https://drive.google.com/file/d/1L01odP4GCMuxd05lKumTpMurLMqr9A9Q/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-05",
+          "title": "Patient Safety Under Pressure: Lead with Calm and Clarity",
+          "detail": "0:45 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1LDLDg1DM6s_iJcAIM4U1kSJAbMME0iiY",
+          "url": "https://drive.google.com/file/d/1LDLDg1DM6s_iJcAIM4U1kSJAbMME0iiY/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-06",
+          "title": "Surveyor Red Flags Leaders Often Miss Until It’s Too Late",
+          "detail": "1:02 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "191qzSmJ9ZqaCzjiM17YdxPzzBWMrAfek",
+          "url": "https://drive.google.com/file/d/191qzSmJ9ZqaCzjiM17YdxPzzBWMrAfek/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-07",
+          "title": "End-of-Life Care in Florida: Lessons for Future Medical Directors",
+          "detail": "0:45 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1tjVG5yZChRDGlMQM0aJ5XrTS2fdEdEIZ",
+          "url": "https://drive.google.com/file/d/1tjVG5yZChRDGlMQM0aJ5XrTS2fdEdEIZ/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-opus-08",
+          "title": "Patient-First Care: The Principle That Improves Everything",
+          "detail": "0:44 · Software Generated · Selected by Cory · CMC branding and BCP outro",
+          "group": "Software Generated",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1FNQB1Q0_nXpNm5itbeRMQyj9SpprVKTh",
+          "url": "https://drive.google.com/file/d/1FNQB1Q0_nXpNm5itbeRMQyj9SpprVKTh/view?usp=drivesdk"
         },
         {
           "id": "interview-vlog",
@@ -1021,6 +1101,24 @@ window.CMC_DATA = {
           "driveId": "1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6",
           "url": "https://drive.google.com/file/d/1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6/view?usp=drivesdk",
           "supplementary": true
+        },
+        {
+          "id": "bcp-panel-thumbnail-1",
+          "title": "Full-panel thumbnail · Option 1",
+          "detail": "Norman at the lectern · Survey Ready? · Choose Option 1 or Option 2 in your feedback.",
+          "group": "Full-panel thumbnails · Choose your favorite",
+          "kind": "photo",
+          "driveId": "1rdMFslX1KYzD_v85J8nO5PyAdcoWWCOS",
+          "url": "https://drive.google.com/file/d/1rdMFslX1KYzD_v85J8nO5PyAdcoWWCOS/view"
+        },
+        {
+          "id": "bcp-panel-thumbnail-2",
+          "title": "Full-panel thumbnail · Option 2",
+          "detail": "All four speakers · Survey Readiness · Choose Option 1 or Option 2 in your feedback.",
+          "group": "Full-panel thumbnails · Choose your favorite",
+          "kind": "photo",
+          "driveId": "1ABDT5uDi20hXPgJt47zDv4EFr-ljEQrY",
+          "url": "https://drive.google.com/file/d/1ABDT5uDi20hXPgJt47zDv4EFr-ljEQrY/view"
         }
       ],
       "scope": {
@@ -1049,7 +1147,7 @@ window.CMC_DATA = {
             "title": "One combined conference film",
             "criteria": "Combine the panel and attendee interviews into one film, 35–45 minutes total.",
             "status": "Ready for review",
-            "detail": "39:27 combined conference film with the latest music and transition revision.",
+            "detail": "39:27 combined film with verified panel names, the latest music revision and CMC Media watermark.",
             "asset": "bcp-compilation-v9",
             "action": "Watch compilation",
             "complete": true
@@ -1058,7 +1156,7 @@ window.CMC_DATA = {
             "title": "Three vertical social shorts",
             "criteria": "Run the edited film through the shorts workflow to create social content.",
             "status": "Ready for review",
-            "detail": "Three branded interview shorts are available below.",
+            "detail": "Three Cory Created shorts are available, plus eight selected Software Generated clips with CMC branding and BCP outros.",
             "complete": true,
             "asset": "bcp-short-01",
             "action": "Watch branded shorts"
