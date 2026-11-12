@@ -1,5 +1,5 @@
 window.CMC_DATA = {
-  "updated": "November 9, 2026",
+  "updated": "November 11, 2026",
   "form": "https://form.jotform.com/263085670628060",
   "projects": [
     {
@@ -908,28 +908,42 @@ window.CMC_DATA = {
       "title": "BCP Conference",
       "formEvent": "BCP Conference",
       "subtitle": "Best Care Practices Annual Conference & Trade Show",
-      "description": "Existing reference cuts are available to review. The combined panel and interview film and its social shorts are still in production.",
-      "status": "Production in progress",
-      "defaultAsset": "interview-vlog",
-      "reviewHint": "Use the reference cuts to flag preferred interview moments and any corrections for the upcoming film.",
+      "description": "The completed full panel is available below. The edutainment film and three vertical social shorts are being finalized.",
+      "status": "Full panel complete",
+      "defaultAsset": "bcp-full-panel",
+      "reviewHint": "Watch the full panel and leave timestamped feedback here. The revised edutainment film and social shorts will be added to this same review link.",
       "deliverables": [
         {
-          "title": "Panel + attendee interview film",
-          "status": "In production",
-          "detail": "Target: 35–45 minutes, including at least ten minutes of interviews"
+          "title": "Standalone full panel",
+          "status": "Complete",
+          "detail": "61:37 · Full session with enhanced audio"
         },
         {
-          "title": "Social shorts",
-          "status": "In production",
-          "detail": "To be selected from the combined film"
+          "title": "Edutainment film",
+          "status": "Final revision in progress",
+          "detail": "Final music revision will be added here when ready."
+        },
+        {
+          "title": "Three vertical social shorts",
+          "status": "Revisions in progress",
+          "detail": "Stabilization and longer excerpts, including speaker introductions where available."
         },
         {
           "title": "YouTube delivery",
           "status": "Awaiting sign-off",
-          "detail": "Publishing follows approval of the completed edit"
+          "detail": "Publishing follows approval."
         }
       ],
       "assets": [
+        {
+          "id": "bcp-full-panel",
+          "title": "BCP · Full panel",
+          "detail": "61:37 · Complete panel session with enhanced camera audio",
+          "group": "Full panel",
+          "kind": "video",
+          "driveId": "1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2",
+          "url": "https://drive.google.com/file/d/1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2/view?usp=drivesdk"
+        },
         {
           "id": "interview-vlog",
           "title": "Norman’s interview vlog",
@@ -966,10 +980,12 @@ window.CMC_DATA = {
         "due": "November 7, 2026",
         "items": [
           {
-            "title": "Full panel session edit",
-            "criteria": "Edit the panel session for inclusion in the final combined film.",
-            "status": "In production",
-            "detail": "The completed panel edit is not yet ready for review."
+            "title": "Standalone full panel",
+            "criteria": "Deliver the full panel as a separate edited video.",
+            "status": "Complete",
+            "detail": "61:37 finished panel with enhanced audio.",
+            "asset": "bcp-full-panel",
+            "action": "Watch full panel"
           },
           {
             "title": "Attendee interview compilation",
@@ -980,14 +996,14 @@ window.CMC_DATA = {
           {
             "title": "One combined conference film",
             "criteria": "Combine the panel and attendee interviews into one film, 35–45 minutes total.",
-            "status": "In production",
-            "detail": "The final combined film is not yet ready for review."
+            "status": "Final revision in progress",
+            "detail": "Final music revision is being completed."
           },
           {
-            "title": "Social shorts from the film",
+            "title": "Three vertical social shorts",
             "criteria": "Run the edited film through the shorts workflow to create social content.",
-            "status": "Pending completed film",
-            "detail": "The request did not specify a clip count."
+            "status": "Revisions in progress",
+            "detail": "Three excerpts are being stabilized and extended before delivery."
           },
           {
             "title": "Upload the combined film to YouTube",
@@ -1000,3 +1016,4 @@ window.CMC_DATA = {
     }
   ]
 };
+
