@@ -186,6 +186,7 @@ function renderProject() {
     $("description-download").href = yt.descriptionFile;
     $("copy-status").textContent = "";
   }
+  renderYouTubePackages();
   $("credits-list").replaceChildren();
   for (const item of project.credits || []) {
     const card = element("div", undefined, "credit");
@@ -248,6 +249,60 @@ function feedback(item, opener) {
   $("submission-help").textContent = "One note per requested change. Your review page stays open.";
   feedbackOpener = opener;
   $("feedback-dialog").showModal();
+}
+
+// Multiple long videos each retain their own copy and thumbnail choices.
+function renderYouTubePackages() {
+  let section = $("youtube-packages");
+  if (!section) {
+    section = element("section", undefined, "youtube-package");
+    section.id = "youtube-packages";
+    $("youtube-package").after(section);
+  }
+  section.replaceChildren();
+  section.hidden = !project.youtubePackages?.length;
+  if (section.hidden) return;
+  section.append(element("h2", "YouTube titles, descriptions & thumbnails"), element("p", "Drafts for review. Choose one full-panel thumbnail; YouTube publishing is pending."));
+  for (const pack of project.youtubePackages) {
+    const article = element("article", undefined, "youtube-copy");
+    article.append(element("h3", pack.label));
+    const previews = element("div", undefined, "youtube-grid");
+    pack.thumbnails.forEach((src, index) => {
+      const link = element("a");
+      link.href = src;
+      link.target = "_blank";
+      link.rel = "noopener";
+      const img = element("img");
+      img.src = src;
+      img.alt = pack.label + " thumbnail" + (pack.thumbnails.length > 1 ? " · Option " + (index + 1) : "");
+      img.style.width = "100%";
+      link.append(img, element("p", img.alt));
+      previews.append(link);
+    });
+    article.append(previews);
+    for (const field of ["title", "description"]) {
+      const input = element("textarea");
+      input.value = pack[field];
+      input.readOnly = true;
+      input.rows = field === "title" ? 2 : 14;
+      input.setAttribute("aria-label", pack.label + " " + field);
+      const button = element("button", "Copy " + field, "copy-button");
+      button.type = "button";
+      button.addEventListener("click", async () => {
+        try { await navigator.clipboard.writeText(input.value); button.textContent = "Copied"; }
+        catch { input.focus(); input.select(); button.textContent = "Text selected — use Copy"; }
+      });
+      article.append(element("h4", field === "title" ? "Title" : "Description"), button, input);
+    }
+    const download = element("a", "Download title & description ↓", "button");
+    download.href = pack.copyFile;
+    download.download = "";
+    const note = element("button", "Leave feedback", "button secondary");
+    note.type = "button";
+    note.addEventListener("click", (event) => feedback({title: pack.label + " · YouTube package", detail: pack.title, kind: "copy"}, event.currentTarget));
+    article.append(download, note);
+    section.append(article);
+  }
 }
 
 async function copyYouTube(field) {

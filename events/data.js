@@ -1169,7 +1169,30 @@ window.CMC_DATA = {
             "complete": false
           }
         ]
-      }
+      },
+      "youtubePackages": [
+        {
+          "label": "Full panel",
+          "slug": "full-panel",
+          "title": "Survey Readiness & Immediate Jeopardy | BCP Conference Full Panel",
+          "description": "What does survey readiness look like in everyday care—and how should a team respond when serious concerns arise?\n\nWatch the full Best Care Practices conference panel featuring Norman Harris Jr., Cindy Fronning, Jignasa Dabhi and Kelly Shelley. The discussion explores survey preparation, immediate jeopardy, leadership, just culture and keeping teams focused on patients and residents in post-acute and long-term care.\n\nTopics include:\n• Building survey readiness into daily practice\n• Recognizing red flags and responding as a team\n• Supporting staff through difficult situations\n• Learning from problems through a just-culture approach\n• Community connections and advice for nursing leaders\n\nThis full-session recording includes audience questions and discussion.\n\nProduced by Comfort Measures Media.\nSubscribe for more conversations with the people working to improve care.\n\n#BestCarePractices #LongTermCare #SurveyReadiness",
+          "thumbnails": [
+            "youtube/bcp/BCP-Full-Panel-Thumbnail-V1.png",
+            "youtube/bcp/BCP-Full-Panel-Thumbnail-V2.png"
+          ],
+          "copyFile": "youtube/bcp/BCP-full-panel-YouTube-Copy.txt"
+        },
+        {
+          "label": "Conference compilation",
+          "slug": "compilation",
+          "title": "Care Teams at Work | BCP Conference Highlights & Interviews",
+          "description": "Meet the people, hear the conversations and explore the ideas shared at the Best Care Practices conference.\n\nCare Teams at Work brings together panel highlights and attendee interviews from across the event. From survey readiness and patient-first care to the services supporting post-acute and long-term care teams, this film captures practical perspectives to take back to your workplace.\n\nIn this compilation:\n• Panel conversations about survey readiness, red flags and immediate jeopardy\n• Listening to patients and families\n• Attendee and exhibitor perspectives on supporting care teams\n• Conversations about mobile imaging, palliative care, medication access and podiatry\n• Community connections, professional development and teamwork\n\nPanel highlights feature Norman Harris Jr., Cindy Fronning, Jignasa Dabhi and Kelly Shelley.\n\nFor the complete panel conversation, look for “Survey Readiness & Immediate Jeopardy | BCP Conference Full Panel.”\n\nProduced by Comfort Measures Media.\nSubscribe for more healthcare conversations, event highlights and community connections.\n\n#BestCarePractices #LongTermCare #HealthcareLeadership",
+          "thumbnails": [
+            "youtube/bcp/BCP-Compilation-Thumbnail-V1.png"
+          ],
+          "copyFile": "youtube/bcp/BCP-compilation-YouTube-Copy.txt"
+        }
+      ]
     }
   ]
 };
