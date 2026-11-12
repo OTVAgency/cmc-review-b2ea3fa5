@@ -911,7 +911,7 @@ window.CMC_DATA = {
       "description": "Review the full films and social shorts. Compare the two panel views, then browse Cory Created and Software Generated clips.",
       "status": "Films and shorts ready for review",
       "defaultAsset": "bcp-full-panel",
-      "reviewHint": "Choose your preferred panel view and review the shorts in two groups: Cory Created and Software Generated. Leave timestamped feedback for any changes.",
+      "reviewHint": "Both panel views now include revised camera audio around 44:10. Choose your preferred panel view and thumbnail, then review the Cory Created and Software Generated shorts. Leave timestamped feedback for any further changes.",
       "deliverables": [
         {
           "title": "Standalone full panel",
@@ -938,20 +938,20 @@ window.CMC_DATA = {
         {
           "id": "bcp-full-panel",
           "title": "Full panel · Original wide view",
-          "detail": "61:37 · Complete session · Original wide framing · Enhanced audio · CMC Media watermark",
+          "detail": "61:37 · Original wide framing · CMC watermark · Audio Revision 1: updated camera audio around 44:10",
           "group": "Full panel · Choose your preferred view",
           "kind": "video",
-          "driveId": "1dac8USeJ-jtYJrnUlfR0OBkZaXCGXmFG",
-          "url": "https://drive.google.com/file/d/1dac8USeJ-jtYJrnUlfR0OBkZaXCGXmFG/view?usp=drivesdk"
+          "driveId": "1utjbuyRMRAbQPYqWUXwD6XAiV295mY9N",
+          "url": "https://drive.google.com/file/d/1utjbuyRMRAbQPYqWUXwD6XAiV295mY9N/view?usp=drivesdk"
         },
         {
           "id": "bcp-full-panel-cropped",
           "title": "Full panel · Speaker-focused version",
-          "detail": "61:37 · Same complete session and enhanced audio · Tighter speaker framing · CMC Media watermark",
+          "detail": "61:37 · Tighter speaker framing · CMC watermark · Audio Revision 1: updated camera audio around 44:10",
           "group": "Full panel · Choose your preferred view",
           "kind": "video",
-          "driveId": "1Z-15pk8lFLTFguJatAVNzOLlJ70Emff-",
-          "url": "https://drive.google.com/file/d/1Z-15pk8lFLTFguJatAVNzOLlJ70Emff-/view?usp=drivesdk"
+          "driveId": "1ZL7wwPC_DnUWyTFCvXnv5o97Bz6i9lIG",
+          "url": "https://drive.google.com/file/d/1ZL7wwPC_DnUWyTFCvXnv5o97Bz6i9lIG/view?usp=drivesdk"
         },
         {
           "id": "bcp-compilation-v9",
