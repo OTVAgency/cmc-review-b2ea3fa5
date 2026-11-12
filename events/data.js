@@ -908,25 +908,25 @@ window.CMC_DATA = {
       "title": "BCP Conference",
       "formEvent": "BCP Conference",
       "subtitle": "Best Care Practices Annual Conference & Trade Show",
-      "description": "The completed full panel is available below. The edutainment film and three vertical social shorts are being finalized.",
-      "status": "Full panel complete",
+      "description": "Review the complete conference compilation and choose your preferred full-panel framing below.",
+      "status": "Films ready for review",
       "defaultAsset": "bcp-full-panel",
-      "reviewHint": "Watch the full panel and leave timestamped feedback here. The revised edutainment film and social shorts will be added to this same review link.",
+      "reviewHint": "Compare Original wide view and Speaker-focused version, then tell us which you prefer. Both contain the same full session and enhanced audio. Review the compilation and leave timestamped feedback here.",
       "deliverables": [
         {
           "title": "Standalone full panel",
-          "status": "Complete",
-          "detail": "61:37 · Full session with enhanced audio"
+          "status": "Choose your preferred view",
+          "detail": "61:37 · Original wide and speaker-focused alternatives · Same enhanced audio"
         },
         {
           "title": "Edutainment film",
-          "status": "Final revision in progress",
-          "detail": "Final music revision will be added here when ready."
+          "status": "Ready for review",
+          "detail": "39:27 · Completed compilation with the latest music and transition revision"
         },
         {
           "title": "Three vertical social shorts",
-          "status": "Revisions in progress",
-          "detail": "Stabilization and longer excerpts, including speaker introductions where available."
+          "status": "Selection in progress",
+          "detail": "Compilation clips are being reviewed for selection; final branding and outro follow selection."
         },
         {
           "title": "YouTube delivery",
@@ -937,12 +937,30 @@ window.CMC_DATA = {
       "assets": [
         {
           "id": "bcp-full-panel",
-          "title": "BCP · Full panel",
-          "detail": "61:37 · Complete panel session with enhanced camera audio",
-          "group": "Full panel",
+          "title": "Full panel · Original wide view",
+          "detail": "61:37 · Complete session · Original wide framing · Enhanced audio",
+          "group": "Full panel · Choose your preferred view",
           "kind": "video",
           "driveId": "1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2",
           "url": "https://drive.google.com/file/d/1c60uMbTNnnvMh-vZ5rrypBkPtfdVAFk2/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-full-panel-cropped",
+          "title": "Full panel · Speaker-focused version",
+          "detail": "61:37 · Same complete session and enhanced audio · Tighter speaker framing",
+          "group": "Full panel · Choose your preferred view",
+          "kind": "video",
+          "driveId": "13EhrMKJ9ZF78vhgILsXKb9TDyTcWSRx0",
+          "url": "https://drive.google.com/file/d/13EhrMKJ9ZF78vhgILsXKb9TDyTcWSRx0/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-compilation-v9",
+          "title": "Care Teams at Work · Conference compilation",
+          "detail": "39:27 · Panel highlights and 10:25 of attendee interviews · Upbeat music and smooth transitions",
+          "group": "Conference compilation",
+          "kind": "video",
+          "driveId": "1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM",
+          "url": "https://drive.google.com/file/d/1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM/view?usp=drivesdk"
         },
         {
           "id": "interview-vlog",
@@ -982,28 +1000,32 @@ window.CMC_DATA = {
           {
             "title": "Standalone full panel",
             "criteria": "Deliver the full panel as a separate edited video.",
-            "status": "Complete",
-            "detail": "61:37 finished panel with enhanced audio.",
+            "status": "Ready for selection",
+            "detail": "Both full-session framing options are available above.",
             "asset": "bcp-full-panel",
-            "action": "Watch full panel"
+            "action": "Compare panel views"
           },
           {
             "title": "Attendee interview compilation",
             "criteria": "Include at least 10 minutes of edited attendee interviews in the final film.",
-            "status": "In production",
-            "detail": "Reference cuts below are not the requested final compilation."
+            "status": "Ready for review",
+            "detail": "The conference compilation contains 10:25 of edited attendee interviews.",
+            "asset": "bcp-compilation-v9",
+            "action": "Watch compilation"
           },
           {
             "title": "One combined conference film",
             "criteria": "Combine the panel and attendee interviews into one film, 35–45 minutes total.",
-            "status": "Final revision in progress",
-            "detail": "Final music revision is being completed."
+            "status": "Ready for review",
+            "detail": "39:27 combined conference film with the latest music and transition revision.",
+            "asset": "bcp-compilation-v9",
+            "action": "Watch compilation"
           },
           {
             "title": "Three vertical social shorts",
             "criteria": "Run the edited film through the shorts workflow to create social content.",
-            "status": "Revisions in progress",
-            "detail": "Three excerpts are being stabilized and extended before delivery."
+            "status": "Selection in progress",
+            "detail": "Compilation candidates are in review; selected clips receive final branding and the BCP outro."
           },
           {
             "title": "Upload the combined film to YouTube",
@@ -1016,4 +1038,3 @@ window.CMC_DATA = {
     }
   ]
 };
-
