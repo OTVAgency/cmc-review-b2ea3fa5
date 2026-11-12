@@ -925,8 +925,8 @@ window.CMC_DATA = {
         },
         {
           "title": "Three vertical social shorts",
-          "status": "Selection in progress",
-          "detail": "Compilation clips are being reviewed for selection; final branding and outro follow selection."
+          "status": "Ready for review",
+          "detail": "Three branded interview excerpts with CMC Media watermark."
         },
         {
           "title": "YouTube delivery",
@@ -961,6 +961,36 @@ window.CMC_DATA = {
           "kind": "video",
           "driveId": "1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM",
           "url": "https://drive.google.com/file/d/1fA7IdNDogVKGwK0RU9IzBDvAV_EVAnoM/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-short-01",
+          "title": "Short 01 · Putting patients first",
+          "detail": "0:12 · Branded interview excerpt · CMC Media watermark",
+          "group": "Three branded social shorts",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1RfQ7G7fjpx0wh1_6czPNQo6IaG8pc8tg",
+          "url": "https://drive.google.com/file/d/1RfQ7G7fjpx0wh1_6czPNQo6IaG8pc8tg/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-short-02",
+          "title": "Short 02 · Listen to patients and families",
+          "detail": "0:23 · Branded interview excerpt · CMC Media watermark",
+          "group": "Three branded social shorts",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1b89GTdEuaQ1OwIx5ehW8slA7s7KU_Q7Z",
+          "url": "https://drive.google.com/file/d/1b89GTdEuaQ1OwIx5ehW8slA7s7KU_Q7Z/view?usp=drivesdk"
+        },
+        {
+          "id": "bcp-short-03",
+          "title": "Short 03 · Care after discharge",
+          "detail": "0:18 · Branded interview excerpt · CMC Media watermark",
+          "group": "Three branded social shorts",
+          "kind": "video",
+          "orientation": "vertical",
+          "driveId": "1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5",
+          "url": "https://drive.google.com/file/d/1qv0YcIDwQxuJJocz1RnBVKNeoCKrw0R5/view?usp=drivesdk"
         },
         {
           "id": "interview-vlog",
@@ -1027,9 +1057,11 @@ window.CMC_DATA = {
           {
             "title": "Three vertical social shorts",
             "criteria": "Run the edited film through the shorts workflow to create social content.",
-            "status": "Selection in progress",
-            "detail": "Compilation candidates are in review; selected clips receive final branding and the BCP outro.",
-            "complete": false
+            "status": "Ready for review",
+            "detail": "Three branded interview shorts are available below.",
+            "complete": true,
+            "asset": "bcp-short-01",
+            "action": "Watch branded shorts"
           },
           {
             "title": "Upload the combined film to YouTube",
