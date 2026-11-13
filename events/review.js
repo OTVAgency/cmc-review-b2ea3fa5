@@ -262,7 +262,7 @@ function renderYouTubePackages() {
   section.replaceChildren();
   section.hidden = !project.youtubePackages?.length;
   if (section.hidden) return;
-  section.append(element("h2", "YouTube titles, descriptions & thumbnails"), element("p", "Drafts for review. Choose one full-panel thumbnail; YouTube publishing is pending."));
+  section.append(element("h2", "YouTube titles, descriptions & thumbnails"), element("p", project.youtubePackageHint || "Drafts for review. Choose one full-panel thumbnail; YouTube publishing is pending."));
   for (const pack of project.youtubePackages) {
     const article = element("article", undefined, "youtube-copy");
     article.append(element("h3", pack.label));
