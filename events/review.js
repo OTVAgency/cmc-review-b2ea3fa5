@@ -14,13 +14,22 @@ function isCardioRenal() {
   return project.id === "cardiorenal";
 }
 
+function isCompassRose() {
+  return project.id === "compass-rose-nov11";
+}
+
+function hasDeliverableNavigation() {
+  return isCardioRenal() || isCompassRose();
+}
+
 function scrollToReview(target) {
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   target.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
 }
 
 function mediaSequence() {
-  if (!isCardioRenal() || (!selected.albumPhoto && !selected.id.startsWith("cardio-opus-"))) return [];
+  if (!(isCompassRose() && selected.group === "Social shorts") &&
+      !(isCardioRenal() && (selected.albumPhoto || selected.id.startsWith("cardio-opus-")))) return [];
   return project.assets.filter((asset) => asset.group === selected.group && !asset.unlisted);
 }
 
@@ -35,9 +44,20 @@ function updateItemNavigation() {
 }
 
 function applyPhoneLayout() {
-  const mobile = isCardioRenal() && phoneLayout.matches;
+  const mobile = hasDeliverableNavigation() && phoneLayout.matches;
   $("project").classList.toggle("cardio-phone", mobile);
-  $("cardio-review-jumps").hidden = !mobile;
+  const jumps = $("cardio-review-jumps");
+  jumps.hidden = !(mobile || isCompassRose());
+  jumps.replaceChildren();
+  const actions = isCompassRose()
+    ? [["recap", "Recap"], ["full", "Full Program"], ["shorts", "Shorts"], ["checklist", "Checklist"]]
+    : [["recap", "Recap"], ["shorts", "Shorts"], ["photos", "Photos"], ["checklist", "Checklist"]];
+  for (const [target, label] of actions) {
+    const button = element("button", label);
+    button.type = "button";
+    button.dataset.reviewJump = target;
+    jumps.append(button);
+  }
   const layout = $("review-layout");
   const scope = $("scope-section");
   const instructions = document.querySelector(".review-instructions");
@@ -67,27 +87,12 @@ function chooseAsset(id, focus = false) {
   updateItemNavigation();
   $("asset-detail").textContent = selected.detail;
   $("asset-kind").textContent = selected.albumPhoto ? "Selected photo" : selected.supplementary || selected.unlisted ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
-  // Use Drive's embedded viewer, retaining the file's existing account access.
-  // Replacing the frame stops the previous video when the selection changes.
   clearTimeout(previewTimer);
-  const frame = element("iframe");
-  frame.id = "media-preview";
-  frame.title = selected.title + " · Google Drive preview";
-  frame.allow = "autoplay; fullscreen";
-  frame.allowFullscreen = true;
-  frame.src = "https://drive.google.com/file/d/" + encodeURIComponent(selected.driveId) + "/preview";
-  $("preview-status").textContent = "Loading the selected preview…";
-  frame.addEventListener("load", () => {
-    clearTimeout(previewTimer);
-    // Cross-origin load does not prove successful playback or account access.
-    $("preview-status").textContent = selected.kind === "photo"
-      ? "Review the photo above. Include its " + (selected.albumPhoto ? "album" : "frame") + " number in your feedback."
-      : "Press Play above to review. Add the timestamp when leaving feedback.";
-  });
-  $("player").replaceChildren(frame);
-  previewTimer = setTimeout(() => {
-    $("preview-status").textContent = "Preview taking a while? Open in Drive below to sign in or check video processing.";
-  }, 15000);
+  // On phones, first-party Drive playback avoids the embedded cookie gate.
+  // Keep the existing private file permissions and offer inline playback too.
+  $("player").classList.remove("direct-playback");
+  if (isCompassRose() && phoneLayout.matches) renderPhonePlayback();
+  else renderEmbeddedPlayback();
   $("open-media").href = selected.url;
   $("open-media").setAttribute("aria-label", "Open " + selected.title + " in Google Drive");
   document.querySelectorAll(".media-choice").forEach((button) => {
@@ -99,16 +104,58 @@ function chooseAsset(id, focus = false) {
   url.searchParams.set("item", selected.id);
   history.replaceState(null, "", url);
   if (focus) {
-    if (isCardioRenal() && phoneLayout.matches) scrollToReview($("review-layout"));
+    if (hasDeliverableNavigation() && phoneLayout.matches) scrollToReview($("review-layout"));
     else $("player").scrollIntoView({ behavior: "smooth", block: "center" });
   }
+}
+
+function renderEmbeddedPlayback() {
+  clearTimeout(previewTimer);
+  const asset = selected;
+  $("player").classList.remove("direct-playback");
+  const frame = element("iframe");
+  frame.id = "media-preview";
+  frame.title = asset.title + " · Google Drive preview";
+  frame.allow = "autoplay; fullscreen";
+  frame.allowFullscreen = true;
+  frame.src = "https://drive.google.com/file/d/" + encodeURIComponent(asset.driveId) + "/preview";
+  $("preview-status").textContent = "Loading the selected preview…";
+  frame.addEventListener("load", () => {
+    if (selected !== asset) return;
+    clearTimeout(previewTimer);
+    // Cross-origin load alone cannot confirm playback or cookie permission.
+    $("preview-status").textContent = asset.kind === "photo"
+      ? "Review the photo above. Include its " + (asset.albumPhoto ? "album" : "frame") + " number in your feedback."
+      : "Press Play above. If Google asks for cookies, use Open in Drive below, then return here for feedback.";
+  });
+  $("player").replaceChildren(frame);
+  previewTimer = setTimeout(() => {
+    $("preview-status").textContent = "Preview taking a while? Open in Drive below to watch, then return here for feedback.";
+  }, 15000);
+}
+
+function renderPhonePlayback() {
+  $("player").classList.add("direct-playback");
+  const card = element("div", undefined, "phone-playback-card");
+  const watch = element("a", "▶ Watch video", "button");
+  watch.href = selected.url;
+  watch.target = "_blank";
+  watch.rel = "noopener noreferrer";
+  watch.setAttribute("aria-label", "Watch " + selected.title + " in Google Drive");
+  const inline = element("button", "Try playing on this page", "inline-playback-button");
+  inline.type = "button";
+  inline.addEventListener("click", renderEmbeddedPlayback);
+  card.append(element("p", "Ready to watch", "phone-playback-title"), watch,
+    element("p", "Opens in Google Drive. Return here to leave your timestamped feedback."), inline);
+  $("player").replaceChildren(card);
+  $("preview-status").textContent = "Phone playback opens directly in Drive to avoid embedded-player cookie prompts. Sign in with your shared Google account if asked.";
 }
 
 function renderLibrary() {
   const assets = project.assets.filter((asset) => !asset.unlisted);
   $("media-list").replaceChildren();
   $("extras-list").replaceChildren();
-  $("extras-section").hidden = !project.scope;
+  $("extras-section").hidden = !project.scope || !assets.some((asset) => asset.supplementary);
   const mainCount = assets.filter((asset) => !asset.supplementary).length;
   $("asset-count").textContent = "(" + mainCount + ")";
   const mainGroups = [...new Set(assets.filter((asset) => !asset.supplementary).map((asset) => asset.group))];
@@ -120,11 +167,11 @@ function renderLibrary() {
     const category = isCardioRenal() && !supplementary
       ? items.some((item) => item.albumPhoto) ? "photos"
         : items.some((item) => item.id.startsWith("cardio-opus-")) ? "shorts" : "videos"
-      : null;
+      : isCompassRose() ? (name === "Social shorts" ? "shorts" : "videos") : null;
     const disclosure = supplementary || (category && category !== "videos");
     const group = element(disclosure ? "details" : "section", undefined,
       supplementary ? "media-group extra-media" : category ? "media-group cardio-media-group" : "media-group");
-    if (category) group.id = "cardio-group-" + category;
+    if (category) group.id = "cardio-group-" + (isCompassRose() && name === "Full program" ? "full" : category);
     if (category && disclosure) group.open = !phoneLayout.matches;
     group.append(element(disclosure ? "summary" : "h3", disclosure ? name + " (" + items.length + ")" : name));
     for (const asset of items) {
@@ -197,7 +244,7 @@ function renderProject() {
   const wanted = new URL(location.href).searchParams.get("item");
   chooseAsset(project.assets.some((asset) => asset.id === wanted) ? wanted : project.defaultAsset);
   const group = selected.albumPhoto ? $("cardio-group-photos") :
-    selected.id.startsWith("cardio-opus-") ? $("cardio-group-shorts") : null;
+    (selected.id.startsWith("cardio-opus-") || (isCompassRose() && selected.group === "Social shorts")) ? $("cardio-group-shorts") : null;
   if (group) group.open = true;
 }
 
@@ -207,7 +254,7 @@ function renderScope() {
   $("scope-list").replaceChildren();
   if (!project.scope) return;
   $("scope-section").open = false;
-  $("scope-source").textContent = "Requested " + project.scope.requested + " · Due " + project.scope.due;
+  $("scope-source").textContent = project.scope.summary || ("Requested " + project.scope.requested + " · Due " + project.scope.due);
   const complete = project.scope.items.filter((item) => item.complete).length;
   $("scope-progress").textContent = complete + " of " + project.scope.items.length + " available";
   for (const item of project.scope.items) {
@@ -361,6 +408,9 @@ $("cardio-review-jumps").addEventListener("click", (event) => {
   if (!target) return;
   if (target === "recap") {
     if (selected.id !== project.defaultAsset) chooseAsset(project.defaultAsset);
+    scrollToReview($("review-layout"));
+  } else if (target === "full" && isCompassRose()) {
+    chooseAsset("full-v1");
     scrollToReview($("review-layout"));
   } else if (target === "checklist") {
     $("scope-section").open = true;

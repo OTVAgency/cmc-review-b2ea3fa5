@@ -111,3 +111,13 @@ dialog{padding:0;border:1px solid var(--border);border-radius:12px;width:min(760
   .scope-title { font-size:18px; }
 }
 @media(prefers-reduced-motion:reduce) { .scope-chevron { transition:none; } }
+
+/* Compass Rose uses the familiar deliverable tabs on every screen size. */
+.cardio-review-jumps:not([hidden]) { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; padding:5px; margin-bottom:14px; border:1px solid var(--border); border-radius:9px; background:white; }
+.player.direct-playback { aspect-ratio:auto; min-height:220px; max-height:none; }
+.phone-playback-card { display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; padding:26px 20px; color:white; }
+.phone-playback-card p { margin:0; font-size:12px; line-height:1.6; max-width:340px; }
+.phone-playback-card .phone-playback-title { font-size:19px; font-weight:650; }
+.phone-playback-card .button { background:white; color:var(--blue); min-width:180px; min-height:44px; }
+.inline-playback-button { border:0; padding:10px; min-height:44px; background:transparent; color:#d9eaf8; text-decoration:underline; font-size:12px; }
+@media(max-width:760px) { .cardio-phone .player-actions { flex-wrap:wrap; } .cardio-phone .scope-title { font-size:18px; } .cardio-phone .scope-heading { gap:10px; } }

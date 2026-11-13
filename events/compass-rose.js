@@ -9,6 +9,14 @@ window.CMC_DATA.projects.push({
   "description": "The Veterans Day gathering: community connections, practical care conversations and a birthday tribute.",
   "status": "V1 · Ready for review",
   "defaultAsset": "recap-v1",
+  "scope": {
+    "summary": "November 11, 2026 · All eight V1 videos available for review",
+    "items": [
+      {"title":"Event recap","criteria":"6:05 · Highlights and guest conversations","detail":"V1 review draft","status":"Available for review","complete":true,"asset":"recap-v1","action":"Watch recap →"},
+      {"title":"Full program","criteria":"58:52 · Complete event program","detail":"V1 review draft","status":"Available for review","complete":true,"asset":"full-v1","action":"Watch full program →"},
+      {"title":"Six social shorts","criteria":"Six captioned vertical edits","detail":"Use Shorts above to choose a video, or Previous / Next to review the set.","status":"Available for review","complete":true,"asset":"short-01-v1","action":"Start reviewing shorts →"}
+    ]
+  },
   "reviewHint": "Choose a video and add the timestamp with any requested changes. Each note includes the selected V1 review copy.",
   "deliverables": [
     {
