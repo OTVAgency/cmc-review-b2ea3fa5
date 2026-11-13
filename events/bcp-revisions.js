@@ -8,7 +8,7 @@
   "description": "Review the revised speaker-focused full panel, interview-only compilation and social shorts.",
   "status": "Revisions ready for review",
   "defaultAsset": "bcp-full-panel-cropped",
-  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work contains interviews only, including Dr. Britton and Shark Bird. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
+  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work preserves the original conference intro and its transition into Ryan at Balanced Wellbeing, followed by interviews including Dr. Britton and Shark Bird. Panel discussion clips are removed. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
   "deliverables": [
     {
       "title": "Standalone full panel",
@@ -18,7 +18,7 @@
     {
       "title": "Interview-only compilation",
       "status": "Revision ready for review",
-      "detail": "23:14 · 14 attendee and sit-down interviews · Includes Dr. Britton and Shark Bird · No panel clips"
+      "detail": "23:17 · Original intro and Ryan transition restored · 14 interviews including Dr. Britton and Shark Bird · No panel discussion"
     },
     {
       "title": "Three vertical social shorts",
@@ -43,12 +43,12 @@
     },
     {
       "id": "bcp-compilation-v9",
-      "title": "Care Teams at Work · Interviews only",
-      "detail": "23:14 · 14 attendee and sit-down interviews · Includes Dr. Britton and Shark Bird · No panel clips",
+      "title": "Care Teams at Work · Original intro restored",
+      "detail": "23:17 · Original intro and Ryan transition restored · 14 interviews including Dr. Britton and Shark Bird · No panel discussion",
       "group": "Interview compilation",
       "kind": "video",
-      "driveId": "1BaVk9F7CyiEmVg1zwhxECX2x5QgBusWl",
-      "url": "https://drive.google.com/file/d/1BaVk9F7CyiEmVg1zwhxECX2x5QgBusWl/view"
+      "driveId": "1EBNQY5gFxodzm0cndtA50CPynEDZIwBX",
+      "url": "https://drive.google.com/file/d/1EBNQY5gFxodzm0cndtA50CPynEDZIwBX/view"
     },
     {
       "id": "bcp-short-01",
@@ -247,7 +247,7 @@
         "title": "Interview-only conference film",
         "criteria": "November 12 revision: remove panel clips and focus on attendee and sit-down interviews.",
         "status": "Revision ready for review",
-        "detail": "23:14 revised film with matched recorder audio, music and CMC branding.",
+        "detail": "23:17 revised film with the original intro and Ryan transition restored, matched recorder audio, music and CMC branding.",
         "asset": "bcp-compilation-v9",
         "action": "Watch compilation",
         "complete": true
