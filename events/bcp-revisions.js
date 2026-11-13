@@ -8,7 +8,7 @@
   "description": "Review the revised speaker-focused full panel, interview-only compilation and social shorts.",
   "status": "Revisions ready for review",
   "defaultAsset": "bcp-full-panel-cropped",
-  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work preserves the original conference intro and its transition into Ryan at Balanced Wellbeing, followed by interviews including Dr. Britton and Shark Bird. Panel discussion clips are removed. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
+  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work preserves the original conference intro and its transition into Ryan at Balanced Wellbeing, followed by interviews including Dr. Britton and Shark Bird. Panel discussion clips are removed. The compilation now uses Dr. on the verified doctor name tags, and Short 02 credits Dr. Diane Sanders-Cepeda. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
   "deliverables": [
     {
       "title": "Standalone full panel",
@@ -18,7 +18,7 @@
     {
       "title": "Interview-only compilation",
       "status": "Revision ready for review",
-      "detail": "23:17 · Original intro and Ryan transition restored · 14 interviews including Dr. Britton and Shark Bird · No panel discussion"
+      "detail": "23:17 · Original intro and Ryan transition retained · Dr. name tags updated · 14 interviews · No panel discussion"
     },
     {
       "title": "Three vertical social shorts",
@@ -44,7 +44,7 @@
     {
       "id": "bcp-compilation-v9",
       "title": "Care Teams at Work · Original intro restored",
-      "detail": "23:17 · Original intro and Ryan transition restored · 14 interviews including Dr. Britton and Shark Bird · No panel discussion",
+      "detail": "23:17 · Original intro and Ryan transition retained · Dr. name tags updated · 14 interviews · No panel discussion",
       "group": "Interview compilation",
       "kind": "video",
       "driveId": "1EBNQY5gFxodzm0cndtA50CPynEDZIwBX",
@@ -63,7 +63,7 @@
     {
       "id": "bcp-short-02",
       "title": "Short 02 · Listen to patients and families",
-      "detail": "0:23 · Branded interview excerpt · CMC Media watermark · Cory Created",
+      "detail": "0:23 · Dr. Diane Sanders-Cepeda name tag updated · CMC Media watermark · Cory Created",
       "group": "Cory Created",
       "kind": "video",
       "orientation": "vertical",
@@ -247,7 +247,7 @@
         "title": "Interview-only conference film",
         "criteria": "November 12 revision: remove panel clips and focus on attendee and sit-down interviews.",
         "status": "Revision ready for review",
-        "detail": "23:17 revised film with the original intro and Ryan transition restored, matched recorder audio, music and CMC branding.",
+        "detail": "23:17 revised film with the original intro and Ryan transition, updated Dr. name tags, matched recorder audio, music and CMC branding.",
         "asset": "bcp-compilation-v9",
         "action": "Watch compilation",
         "complete": true
