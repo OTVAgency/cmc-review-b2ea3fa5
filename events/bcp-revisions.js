@@ -8,7 +8,7 @@
   "description": "Review the revised speaker-focused full panel, interview-only compilation and social shorts.",
   "status": "Revisions ready for review",
   "defaultAsset": "bcp-full-panel-cropped",
-  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work preserves the original conference intro and its transition into Ryan at Balanced Wellbeing, followed by interviews including Dr. Britton and Shark Bird. Panel discussion clips are removed. The compilation now uses Dr. on the verified doctor name tags, and Short 02 credits Dr. Diane Sanders-Cepeda. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
+  "reviewHint": "The selected speaker-focused panel now has a clean branded opening and Norman Harris title credit. Care Teams at Work preserves the original conference intro and its transition into Ryan at Balanced Wellbeing, followed by interviews including Dr. Mark Britton and Shark Bird. Panel discussion clips are removed. The compilation now uses Dr. on the verified doctor name tags, and Short 02 credits Dr. Diane Sanders-Cepeda. Orlando BCP reel 2 has revised closing logos. Full-panel thumbnail Option 2 is selected. Leave timestamped feedback on the revisions.",
   "deliverables": [
     {
       "title": "Standalone full panel",
@@ -18,7 +18,7 @@
     {
       "title": "Interview-only compilation",
       "status": "Revision ready for review",
-      "detail": "23:17 · Original intro and Ryan transition retained · Dr. name tags updated · 14 interviews · No panel discussion"
+      "detail": "23:17 · Original intro and Ryan transition retained · Dr. Mark Britton credit updated · 14 interviews · No panel discussion"
     },
     {
       "title": "Three vertical social shorts",
@@ -44,7 +44,7 @@
     {
       "id": "bcp-compilation-v9",
       "title": "Care Teams at Work · Original intro restored",
-      "detail": "23:17 · Original intro and Ryan transition retained · Dr. name tags updated · 14 interviews · No panel discussion",
+      "detail": "23:17 · Original intro and Ryan transition retained · Dr. Mark Britton credit updated · 14 interviews · No panel discussion",
       "group": "Interview compilation",
       "kind": "video",
       "driveId": "1EBNQY5gFxodzm0cndtA50CPynEDZIwBX",
@@ -161,16 +161,6 @@
       "url": "https://drive.google.com/file/d/1FNQB1Q0_nXpNm5itbeRMQyj9SpprVKTh/view?usp=drivesdk"
     },
     {
-      "id": "interview-vlog",
-      "title": "Norman’s interview vlog",
-      "detail": "8:16 · Existing reference cut",
-      "group": "Extras · Reference cuts",
-      "kind": "video",
-      "driveId": "1QRbGlNV7U-h3foLH5Mrj0Aq3nN2ktNor",
-      "url": "https://drive.google.com/file/d/1QRbGlNV7U-h3foLH5Mrj0Aq3nN2ktNor/view?usp=drivesdk",
-      "supplementary": true
-    },
-    {
       "id": "orlando-reel-2",
       "title": "Orlando BCP reel 2 · Revised closing logos",
       "detail": "1:02 · BCP then Comfort Measures Media closing cards · Branding revision to the supplied event reel",
@@ -182,16 +172,6 @@
       "orientation": "vertical"
     },
     {
-      "id": "photo-reel",
-      "title": "Conference photo reel",
-      "detail": "Existing photo reel · Reference cut",
-      "group": "Extras · Reference cuts",
-      "kind": "video",
-      "driveId": "1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6",
-      "url": "https://drive.google.com/file/d/1DjnJ0Z4n3LzL0aOXhIMaHIwjUK9m2sC6/view?usp=drivesdk",
-      "supplementary": true
-    },
-    {
       "id": "bcp-panel-thumbnail-2",
       "title": "Full-panel thumbnail · Selected Option 2",
       "detail": "Selected November 12 · All four speakers · Survey Readiness",
@@ -199,26 +179,6 @@
       "kind": "photo",
       "driveId": "1ABDT5uDi20hXPgJt47zDv4EFr-ljEQrY",
       "url": "https://drive.google.com/file/d/1ABDT5uDi20hXPgJt47zDv4EFr-ljEQrY/view"
-    },
-    {
-      "id": "bcp-full-panel",
-      "title": "Full panel · Original wide view",
-      "detail": "61:37 · Previous wide alternative · Original opening · Accepted audio repair",
-      "group": "Extras · Previous panel view",
-      "kind": "video",
-      "driveId": "1utjbuyRMRAbQPYqWUXwD6XAiV295mY9N",
-      "url": "https://drive.google.com/file/d/1utjbuyRMRAbQPYqWUXwD6XAiV295mY9N/view?usp=drivesdk",
-      "supplementary": true
-    },
-    {
-      "id": "bcp-panel-thumbnail-1",
-      "title": "Full-panel thumbnail · Option 1",
-      "detail": "Previous alternative · Norman at the lectern · Survey Ready?",
-      "group": "Extras · Previous thumbnail",
-      "kind": "photo",
-      "driveId": "1rdMFslX1KYzD_v85J8nO5PyAdcoWWCOS",
-      "url": "https://drive.google.com/file/d/1rdMFslX1KYzD_v85J8nO5PyAdcoWWCOS/view",
-      "supplementary": true
     }
   ],
   "scope": {
@@ -285,7 +245,7 @@
       "label": "Interview compilation",
       "slug": "compilation",
       "title": "Care Teams at Work | BCP Conference Attendee Interviews",
-      "description": "Meet the people and hear the conversations from the Best Care Practices conference.\n\nCare Teams at Work brings together 14 attendee and sit-down interviews hosted by Norman Harris Jr., including conversations with Shark Bird, Dr. Britton, Brianna Wynne and Diane Sanders-Cepeda.\n\nThe interviews explore patient-first care, listening to patients and families, teamwork, professional development, and services supporting post-acute and long-term care teams. Hear attendee and exhibitor perspectives on mobile imaging, palliative care, medication access, podiatry and community connections.\n\nFor the panel discussion, watch “Survey Readiness & Immediate Jeopardy | BCP Conference Full Panel.”\n\nProduced by Comfort Measures Media.\nSubscribe for more healthcare conversations and community connections.\n\n#BestCarePractices #LongTermCare #HealthcareLeadership",
+      "description": "Meet the people and hear the conversations from the Best Care Practices conference.\n\nCare Teams at Work brings together 14 attendee and sit-down interviews hosted by Norman Harris Jr., including conversations with Shark Bird, Dr. Mark Britton, Brianna Wynne and Diane Sanders-Cepeda.\n\nThe interviews explore patient-first care, listening to patients and families, teamwork, professional development, and services supporting post-acute and long-term care teams. Hear attendee and exhibitor perspectives on mobile imaging, palliative care, medication access, podiatry and community connections.\n\nFor the panel discussion, watch “Survey Readiness & Immediate Jeopardy | BCP Conference Full Panel.”\n\nProduced by Comfort Measures Media.\nSubscribe for more healthcare conversations and community connections.\n\n#BestCarePractices #LongTermCare #HealthcareLeadership",
       "thumbnails": [
         "youtube/bcp/BCP-Compilation-Thumbnail-V1.png"
       ],
