@@ -88,11 +88,10 @@ function chooseAsset(id, focus = false) {
   $("asset-detail").textContent = selected.detail;
   $("asset-kind").textContent = selected.albumPhoto ? "Selected photo" : selected.supplementary || selected.unlisted ? "Extra · Reference" : selected.kind === "photo" ? "Photo candidate" : "Video review";
   clearTimeout(previewTimer);
-  // On phones, first-party Drive playback avoids the embedded cookie gate.
-  // Keep the existing private file permissions and offer inline playback too.
+  // Use the same inline Drive player for every event and screen size.
+  // The Open in Drive link remains available if Google blocks the preview.
   $("player").classList.remove("direct-playback");
-  if (isCompassRose() && phoneLayout.matches) renderPhonePlayback();
-  else renderEmbeddedPlayback();
+  renderEmbeddedPlayback();
   $("open-media").href = selected.url;
   $("open-media").setAttribute("aria-label", "Open " + selected.title + " in Google Drive");
   document.querySelectorAll(".media-choice").forEach((button) => {
@@ -132,23 +131,6 @@ function renderEmbeddedPlayback() {
   previewTimer = setTimeout(() => {
     $("preview-status").textContent = "Preview taking a while? Open in Drive below to watch, then return here for feedback.";
   }, 15000);
-}
-
-function renderPhonePlayback() {
-  $("player").classList.add("direct-playback");
-  const card = element("div", undefined, "phone-playback-card");
-  const watch = element("a", "▶ Watch video", "button");
-  watch.href = selected.url;
-  watch.target = "_blank";
-  watch.rel = "noopener noreferrer";
-  watch.setAttribute("aria-label", "Watch " + selected.title + " in Google Drive");
-  const inline = element("button", "Try playing on this page", "inline-playback-button");
-  inline.type = "button";
-  inline.addEventListener("click", renderEmbeddedPlayback);
-  card.append(element("p", "Ready to watch", "phone-playback-title"), watch,
-    element("p", "Opens in Google Drive. Return here to leave your timestamped feedback."), inline);
-  $("player").replaceChildren(card);
-  $("preview-status").textContent = "Phone playback opens directly in Drive to avoid embedded-player cookie prompts. Sign in with your shared Google account if asked.";
 }
 
 function renderLibrary() {
